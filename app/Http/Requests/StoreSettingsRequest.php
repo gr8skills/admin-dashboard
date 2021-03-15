@@ -32,13 +32,6 @@ class StoreSettingsRequest extends FormRequest
             'school_address1' => [
                 'required',
             ],
-//            'roles.*'  => [
-//                'integer',
-//            ],
-//            'roles'    => [
-//                'required',
-//                'array',
-//            ],
         ];
 
     }

@@ -20,6 +20,18 @@
                     </p>
                 </a>
             </li>
+            @can('mainMenu_access')
+                <li class="nav-item">
+                    <a href="{{ route("admin.mainMenu.index") }}" class="nav-link">
+                        <p>
+                            <i class="fas fa-fw fa-bars">
+
+                            </i>
+                            <span>{{ trans('cruds.menu.navigation') }}</span>
+                        </p>
+                    </a>
+                </li>
+            @endcan
             @can('user_management_access')
                 <li class="nav-item has-treeview {{ request()->is('admin/permissions*') ? 'menu-open' : '' }} {{ request()->is('admin/roles*') ? 'menu-open' : '' }} {{ request()->is('admin/users*') ? 'menu-open' : '' }}">
                     <a class="nav-link" data-toggle="collapse" href="#user_management">
@@ -70,7 +82,7 @@
             @can('content_management_access')
                 <li class="nav-item has-treeview {{ request()->is('admin/permissions*') ? 'menu-open' : '' }} {{ request()->is('admin/roles*') ? 'menu-open' : '' }} {{ request()->is('admin/users*') ? 'menu-open' : '' }}">
                     <a class="nav-link" data-toggle="collapse" href="#content_management">
-                        <i class="fa-fw fas fa-users">
+                        <i class="fa-fw fas fa-cog">
 
                         </i>
                         <p>
@@ -83,7 +95,7 @@
                             @can('permission_access')
                                 <li class="nav-item">
                                     <a href="{{ route("admin.permissions.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
-                                        <i class="fa-fw fas fa-unlock-alt">
+                                        <i class="fa-fw fas fa-book">
 
                                         </i>
                                         <span>Home Page</span>
@@ -94,7 +106,7 @@
                             @can('role_access')
                                     <li class="nav-item has-treeview {{ request()->is('admin/permissions*') ? 'menu-open' : '' }} {{ request()->is('admin/roles*') ? 'menu-open' : '' }} {{ request()->is('admin/users*') ? 'menu-open' : '' }}">
                                         <a class="nav-link" data-toggle="collapse" href="#about_us">
-                                            <i class="fa-fw fas fa-users">
+                                            <i class="fa-fw fas fa-address-card">
 
                                             </i>
                                             <p>About Us
@@ -105,31 +117,35 @@
                                             <ul class="nav">
                                                 <li class="nav-item">
                                                     <a href="{{ route("admin.roles.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
-                                                        <i class="fa-fw fas fa-briefcase">
+                                                        <i class="fa-fw fas fa-road">
 
                                                         </i>
                                                         <span>Principal's Welcome</span>
+                                                    </a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="{{ route("admin.roles.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
-                                                        <i class="fa-fw fas fa-briefcase">
+                                                        <i class="fa-fw fas fa-history">
 
                                                         </i>
                                                         <span>Our History</span>
+                                                    </a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="{{ route("admin.roles.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
-                                                        <i class="fa-fw fas fa-briefcase">
+                                                        <i class="fa-fw fas fa-signal">
 
                                                         </i>
                                                         <span>Our Vision and Mission</span>
+                                                    </a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="{{ route("admin.roles.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
-                                                        <i class="fa-fw fas fa-briefcase">
+                                                        <i class="fa-fw fas fa-heartbeat">
 
                                                         </i>
                                                         <span> Leadership</span>
+                                                    </a>
                                                 </li>
                                             </ul>
 

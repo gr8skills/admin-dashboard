@@ -22,4 +22,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::delete('settings/destroy', 'SiteSettingsController@massDestroy')->name('settings.massDestroy');
     Route::resource('sitesettings', 'SiteSettingsController');
 
+    //MainMenu
+    Route::delete('menus/destroy', 'MainMenuController@massDestroy')->name('menus.massDestroy');
+    Route::resource('mainMenu', 'MainMenuController');
+
 });
