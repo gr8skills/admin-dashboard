@@ -32,6 +32,18 @@
                     </a>
                 </li>
             @endcan
+            @can('slider_access')
+                <li class="nav-item">
+                    <a href="{{ route("admin.sliders.index") }}" class="nav-link">
+                        <p>
+                            <i class="fas fa-fw fa-spinner fa-spin">
+
+                            </i>
+                            <span>{{ trans('cruds.slider.navigation') }}</span>
+                        </p>
+                    </a>
+                </li>
+            @endcan
             @can('user_management_access')
                 <li class="nav-item has-treeview {{ request()->is('admin/permissions*') ? 'menu-open' : '' }} {{ request()->is('admin/roles*') ? 'menu-open' : '' }} {{ request()->is('admin/users*') ? 'menu-open' : '' }}">
                     <a class="nav-link" data-toggle="collapse" href="#user_management">

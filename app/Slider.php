@@ -8,14 +8,14 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Slider extends Model
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory;
 
-    public $table = 'slides';
+    public $table = 'sliders';
 
     protected $dates = [
         'updated_at',
         'created_at',
-        'deleted_at',
+//        'deleted_at',
     ];
 
     protected $fillable = [

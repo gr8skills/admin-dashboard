@@ -4,6 +4,7 @@ use App\SiteSettings;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class CreateSiteSettingsTable extends Migration
@@ -30,6 +31,7 @@ class CreateSiteSettingsTable extends Migration
             $table->string('instagram')->nullable();
             $table->string('twitter')->nullable();
             $table->integer('copyright_year')->nullable();
+            $table->integer('active_setting')->default(0)->nullable();
             $table->timestamps();
         });
 
@@ -50,6 +52,7 @@ class CreateSiteSettingsTable extends Migration
                 'facebook'  => 'https://web.facebook.com/bloombreedschools.org/?_rdc=1&_rdr',
                 'instagram' => 'https://www.instagram.com/bloombreedschools_day/',
                 'twitter'   => 'https://twitter.com/bloombreeddayph?lang=en',
+                'active_setting' => '1',
                 'copyright_year' => '2020',
 
             ],

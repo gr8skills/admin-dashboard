@@ -26,4 +26,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::delete('menus/destroy', 'MainMenuController@massDestroy')->name('menus.massDestroy');
     Route::resource('mainMenu', 'MainMenuController');
 
+    //Sliders
+    Route::delete('sliders/destroy', 'SliderController@massDestroy')->name('sliders.massDestroy');
+    Route::resource('sliders', 'SliderController');
+
 });

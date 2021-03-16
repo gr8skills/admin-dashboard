@@ -3,8 +3,8 @@
 @can('user_create')
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
-            <a class="btn btn-success" href="{{ route("admin.mainMenu.create") }}">
-                {{ trans('global.add') }} {{ trans('cruds.menu.title_singular') }}
+            <a class="btn btn-success" href="{{ route("admin.sliders.create") }}">
+                {{ trans('global.add') }} {{ trans('cruds.slider.title_singular') }}
             </a>
         </div>
     </div>
@@ -12,7 +12,7 @@
 <div class="card">
     <div class="card-header card-header-primary">
         <h4 class="card-title">
-            {{ trans('cruds.menu.title_singular') }} {{ trans('global.list') }}
+            {{ trans('cruds.slider.title_singular') }} {{ trans('global.list') }}
         </h4>
     </div>
 
@@ -25,22 +25,37 @@
 
                         </th>
                         <th>
-                            {{ trans('cruds.menu.fields.id') }}
+                            {{ trans('cruds.slider.fields.id') }}
                         </th>
                         <th>
-                            {{ trans('cruds.menu.fields.name') }}
+                            {{ trans('cruds.slider.fields.name') }}
                         </th>
                         <th>
-                            {{ trans('cruds.menu.fields.link') }}
+                            {{ trans('cruds.slider.fields.alt') }}
                         </th>
                         <th>
-                            {{ trans('cruds.menu.fields.submenu') }}
+                            {{ trans('cruds.slider.fields.class') }}
                         </th>
                         <th>
-                            {{ trans('cruds.menu.fields.alias') }}
+                            {{ trans('cruds.slider.fields.data_image_sizes') }}
                         </th>
                         <th>
-                            {{ trans('cruds.menu.fields.visibility') }}
+                            {{ trans('cruds.slider.fields.data_aspect_ratio') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.slider.fields.data_resource_title') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.slider.fields.data_resource_uuid') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.slider.fields.location') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.slider.fields.type') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.slider.fields.position') }}
                         </th>
                         <th>
                             &nbsp;
@@ -48,44 +63,59 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($menus as $key => $menu)
-                        <tr data-entry-id="{{ $menu->id }}">
+                    @foreach($sliders as $key => $slider)
+                        <tr data-entry-id="{{ $slider->id }}">
                             <td>
 
                             </td>
                             <td>
-                                {{ $menu->id ?? '' }}
+                                {{ $slider->id ?? '' }}
                             </td>
                             <td>
-                                {{ $menu->name ?? '' }}
+                                {{ $slider->name ?? '' }}
                             </td>
                             <td>
-                                {{ $menu->link ?? '' }}
+                                {{ $slider->alt ?? '' }}
                             </td>
                             <td>
-                                {{ $menu->submenu ?? '' }}
+                                {{ $slider->class ?? '' }}
                             </td>
                             <td>
-                                {{ $menu->alias ?? '' }}
+                                {{ $slider->data_image_sizes ?? '' }}
                             </td>
                             <td>
-                                {{ $menu->visibility ?? '' }}
+                                {{ $slider->data_aspect_ratio ?? '' }}
                             </td>
                             <td>
-                                @can('mainMenu_show')
-                                    <a class="btn btn-xs btn-primary" href="{{ route('admin.mainMenu.show', $menu->id) }}">
+                                {{ $slider->data_resource_title ?? '' }}
+                            </td>
+                            <td>
+                                {{ $slider->data_resource_uuid ?? '' }}
+                            </td>
+                            <td>
+                                {{ $slider->location ?? '' }}
+                            </td>
+                            <td>
+                                {{ $slider->type ?? '' }}
+                            </td>
+                            <td>
+                                {{ $slider->position ?? '' }}
+                            </td>
+                            <td>
+                                @can('slider_show')
+                                    <a class="btn btn-xs btn-primary" href="{{ route('admin.sliders.show', $slider->id) }}">
                                         {{ trans('global.view') }}
                                     </a>
                                 @endcan
 
-                                @can('mainMenu_edit')
-                                    <a class="btn btn-xs btn-info" href="{{ route('admin.mainMenu.edit', $menu->id) }}">
+                                @can('slider_edit')
+                                    <a class="btn btn-xs btn-info" href="{{ route('admin.sliders.edit', $slider->id) }}">
                                         {{ trans('global.edit') }}
                                     </a>
                                 @endcan
 
-                                @can('mainMenu_delete')
-                                    <form action="{{ route('admin.mainMenu.destroy', $menu->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
+                                @can('slider_delete')
+                                    <form action="{{ route('admin.sliders.destroy', $slider->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                         <input type="submit" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">
@@ -107,11 +137,11 @@
 <script>
     $(function () {
   let dtButtons = $.extend(true, [], $.fn.dataTable.defaults.buttons)
-@can('user_delete')
+@can('slider_delete')
   let deleteButtonTrans = '{{ trans('global.datatables.delete') }}'
   let deleteButton = {
     text: deleteButtonTrans,
-    url: "{{ route('admin.menus.massDestroy') }}",
+    url: "{{ route('admin.sliders.massDestroy') }}",
     className: 'btn-danger',
     action: function (e, dt, node, config) {
       var ids = $.map(dt.rows({ selected: true }).nodes(), function (entry) {
