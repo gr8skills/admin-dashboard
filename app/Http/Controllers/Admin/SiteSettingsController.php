@@ -17,9 +17,10 @@ class SiteSettingsController extends Controller
     public function index()
     {
         abort_if(Gate::denies('settings_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-        $settings = SiteSettings::where('active_setting', 1)
+        $settings = SiteSettings::where('active_setting', 0)
         ->orderBy('id', 'DESC')
         ->first();
+//        dd($settings);
         $tabs = [
             'General',
             'Main Menu',
@@ -37,8 +38,19 @@ class SiteSettingsController extends Controller
 
     public function store(StoreSettingsRequest $request)
     {
-//        dd($request->all());
+        /*
+          $imageName = time().'.'.$request->school_logo->originalName().$request->school_logo->extension();
+          $request->school_logo->move(public_path('images'), $imageName);
+          $request->school_logo = $imageName;
+        */
+        $file = $request->file('school_logo');
+        $originalname = $file->getClientOriginalName();
+        $path = $file->storeAs('public/images', $originalname);
+        $request->school_logo->move(public_path('images'), $originalname);
+        $request->school_logo = $path;
         $settings = SiteSettings::create($request->all());
+        $settings->school_logo = $originalname;
+        $settings->save();
         return redirect()->route('admin.sitesettings.index', compact($settings));
     }
 

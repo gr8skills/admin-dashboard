@@ -30,4 +30,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::delete('sliders/destroy', 'SliderController@massDestroy')->name('sliders.massDestroy');
     Route::resource('sliders', 'SliderController');
 
+    //CMS Index
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('indexCMS', 'CMSIndexController');
+
+    //CMS Index
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('aboutUsLeadership', 'CMSAboutUsLeadershipController');
+
 });

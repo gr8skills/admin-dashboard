@@ -95,9 +95,16 @@
                     {{ trans('cruds.slider.fields.data_resource_uuid_helper') }}
                 </p>
             </div>
+{{--            <div class="custom-file-control thumbnail"--}}
+{{--                 style="width: 200px; height: 150px;">--}}
+{{--                <img src="{{url('/images/slides'.isset($slider) ? $slider->location : '')}}"--}}
+{{--                     alt="School Logo Image"/>--}}
+{{--            </div>--}}
+            <div class="custom-file form-group">
+                <input type="file" name="location" class="custom-file-input" id="chooseFile">
+                <label class="custom-file-label" for="chooseFile">Select Slide Image</label>
+            </div>
             <div class="form-group {{ $errors->has('location') ? 'has-error' : '' }}">
-                <label for="location">{{ trans('cruds.slider.fields.location') }}</label>
-                <input type="text" id="location" name="location" class="form-control" placeholder="{{ old('location', isset($slider) ? $slider->location: '') }}">
                 @if($errors->has('location'))
                     <p class="help-block">
                         {{ $errors->first('location') }}

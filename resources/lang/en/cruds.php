@@ -81,6 +81,8 @@ return [
             'email_helper'             => '',
             'school_phone1'        => 'School Phone',
             'school_phone1_helper' => '',
+            'school_logo'        => 'School Logo',
+            'school_logo_helper' => '',
             'school_phone2'                 => 'Alternate School Phone',
             'school_phone2_helper'          => '',
             'school_address1'                    => 'School Address',

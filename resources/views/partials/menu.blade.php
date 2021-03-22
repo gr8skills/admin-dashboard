@@ -104,18 +104,18 @@
                     </a>
                     <div class="collapse hide" id="content_management">
                         <ul class="nav">
-                            @can('permission_access')
+                            @can('content_management_access')
                                 <li class="nav-item">
-                                    <a href="{{ route("admin.permissions.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
+                                    <a href="{{ route("admin.indexCMS.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
                                         <i class="fa-fw fas fa-book">
 
                                         </i>
-                                        <span>Home Page</span>
+                                        <span>Home/Index Page</span>
 {{--                                        <span>{{ trans('cruds.permission.title') }}</span>--}}
                                     </a>
                                 </li>
                             @endcan
-                            @can('role_access')
+                            @can('content_management_access')
                                     <li class="nav-item has-treeview {{ request()->is('admin/permissions*') ? 'menu-open' : '' }} {{ request()->is('admin/roles*') ? 'menu-open' : '' }} {{ request()->is('admin/users*') ? 'menu-open' : '' }}">
                                         <a class="nav-link" data-toggle="collapse" href="#about_us">
                                             <i class="fa-fw fas fa-address-card">
@@ -128,7 +128,7 @@
                                         <div class="collapse hid" id="about_us">
                                             <ul class="nav">
                                                 <li class="nav-item">
-                                                    <a href="{{ route("admin.roles.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
+                                                    <a href="{{ route("admin.aboutUsLeadership.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
                                                         <i class="fa-fw fas fa-road">
 
                                                         </i>
@@ -136,7 +136,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="{{ route("admin.roles.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
+                                                    <a href="{{ route("admin.aboutUsLeadership.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
                                                         <i class="fa-fw fas fa-history">
 
                                                         </i>

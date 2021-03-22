@@ -133,6 +133,15 @@
                     {{ trans('cruds.slider.fields.position_helper') }}
                 </p>
             </div>
+            <div class="custom-file-control thumbnail"
+                             style="width: 200px; height: 150px;">
+{{--                            <img src="{{url('/images/slides'.isset($slider) ? $slider->location : '')}}"--}}
+{{--                                 alt="School Logo Image"/>--}}
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="location" class="custom-file-input" id="chooseFile">
+                <label class="custom-file-label" for="chooseFile">Select Slide Image</label>
+            </div>
 
 
             <div>

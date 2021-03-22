@@ -1,12 +1,9 @@
 # Laravel Material Dashboard
 
-Simple Laravel adminpanel based on [Material Dashboard theme from Creative Tim](https://www.creative-tim.com/product/material-dashboard-laravel)
+Simple Laravel adminpanel based on [Material Dashboard](https://www.creative-tim.com/product/material-dashboard-laravel)
 
 
-What's inside:
 
-- Login/Register functionality with default Laravel 
-- Managing Users/Roles/Permissions CRUDs: tables, and forms
 
 ![Laravel Material Dashboard screenshot](https://laraveldaily.com/wp-content/uploads/2019/09/Screen-Shot-2019-09-20-at-1.03.22-PM.png)
 
@@ -33,10 +30,5 @@ Basically, feel free to use and re-use any way you want.
 
 ---
 
-## More from our LaravelDaily Team
 
-- Check out our adminpanel generator [QuickAdminPanel](https://quickadminpanel.com)
-- Read our [Blog with Laravel Tutorials](https://laraveldaily.com)
-- FREE E-book: [50 Laravel Quick Tips (and counting)](https://laraveldaily.com/free-e-book-40-laravel-quick-tips-and-counting/)
-- Subscribe to our [YouTube channel Laravel Business](https://www.youtube.com/channel/UCTuplgOBi6tJIlesIboymGA)
-- Enroll in our [Laravel Online Courses](https://laraveldaily.teachable.com/)
+

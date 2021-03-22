@@ -16,6 +16,7 @@
     <link href="{{ asset('css/material-dashboard.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link href="{{ asset('css/editor.css') }}" rel="stylesheet" />
     @yield('styles')
 </head>
 
@@ -26,6 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="{{ asset('js/bootstrap-material-design.min.js') }}"></script>
     <script src="{{ asset('js/material-dashboard.js') }}"></script>
+    <script src="{{ asset('js/editor.js') }}"></script>
 </body>
 
 </html>

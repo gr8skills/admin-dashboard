@@ -32,7 +32,14 @@ class SliderController extends Controller
 
     public function store(StoreSliderRequest $request)
     {
-        Slider::create($request->all());
+        $file = $request->file('location');
+        $originalname =  time().'.'.$file->getClientOriginalName();
+        $path = $file->storeAs('public/images/slides', $originalname);
+        $request->school_logo->move(public_path('images'), $originalname);
+        $request->school_logo = $path;
+        $slider = Slider::create($request->all());
+        $slider->school_logo = $originalname;
+        $slider->save();
         return redirect()->route('admin.sliders.index');
     }
 

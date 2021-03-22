@@ -98,38 +98,49 @@
                                     {{ trans('cruds.settings.fields.school_address2_helper') }}
                                 </p>
                             </div>
-                            <div class="form-group {{ $errors->has('school_logo') ? 'has-error' : '' }}">
-                                <label class="label-control col-md-3">School
-                                    Logo:</label>
+{{--                            <div class="form-group {{ $errors->has('school_logo') ? 'has-error' : '' }}">--}}
+{{--                                <label class="label-control col-md-3">{{ trans('cruds.settings.fields.school_logo') }} </label>--}}
 
-                                <div class="col-md-6">
-                                    <div class="fileinput fileinput-new"
-                                         data-provides="fileinput">
-                                        <div class="fileinput-new thumbnail"
-                                             style="width: 200px; height: 150px;">
-                                            <img ng-src="{{isset($settings) ? $settings->school_logo : ''}}"
-                                                 alt="School Logo Image" name="school_logo"/></div>
-                                        <div class="fileinput-preview fileinput-exists thumbnail"
-                                             style="max-width: 200px; max-height: 150px;"></div>
-                                        <div>
-                                                        <span class="btn default btn-file">
-                                                        <span class="fileinput-new"> Select image </span>
-                                                        <span class="fileinput-exists"> Change </span>
-                                                        <input type="file"
-                                                               onchange="angular.element(this).scope().uploadedlogo_single(this)"
-                                                               accept="image/png, image/jpeg, image/gif">
-                                                        </span>
-                                            <a href="javascript:;"
-                                               class="btn red fileinput-exists"
-                                               data-dismiss="fileinput"> Remove </a>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix margin-top-10">
-                                        <span class="label label-warning">NOTE!</span>
-                                        <span
-                                                class="black">Image dimensions should not be less than 113x112 pixels(px) and should be at least 75KB</span>
-                                    </div>
-                                </div>
+
+{{--                                <div class="col-md-6">--}}
+{{--                                    <div class="fileinput fileinput-new"--}}
+{{--                                         data-provides="fileinput">--}}
+{{--                                        <div class="fileinput-new thumbnail"--}}
+{{--                                             style="width: 200px; height: 150px;">--}}
+{{--                                            <img src="{{isset($settings) ? $settings->school_logo : ''}}"--}}
+{{--                                                 alt="School Logo Image" name="school_logo"/></div>--}}
+{{--                                        <div class="fileinput-preview fileinput-exists thumbnail"--}}
+{{--                                             style="max-width: 200px; max-height: 150px;"></div>--}}
+{{--                                        <div>--}}
+{{--                                                        <span class="btn default btn-file">--}}
+{{--                                                        <span class="fileinput-new"> Select image </span>--}}
+{{--                                                        <span class="fileinput-exists"> Change </span>--}}
+{{--                                                            <input type="file" name="school_logo" class="form-control" accept="image/png, image/jpg">--}}
+
+{{--                                                        <input type="file"--}}
+{{--                                                               onchange="angular.element(this).scope().uploadedlogo_single(this)"--}}
+{{--                                                               accept="image/png, image/jpeg, image/gif">--}}
+{{--                                                        </span>--}}
+{{--                                            <a href="javascript:;"--}}
+{{--                                               class="btn red fileinput-exists"--}}
+{{--                                               data-dismiss="fileinput"> Remove </a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="clearfix margin-top-10">--}}
+{{--                                        <span class="label label-warning">NOTE!</span>--}}
+{{--                                        <span--}}
+{{--                                                class="black">Image dimensions should not be less than 113x112 pixels(px) and should be at least 75KB</span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+                            <div class="custom-file-control thumbnail"
+                                 style="width: 200px; height: 150px;">
+                                <img src="{{url('/images/'.isset($settings) ? $settings->school_logo : '')}}"
+                                     alt="School Logo Image"/>
+                            </div>
+                            <div class="custom-file form-group">
+                                <input type="file" name="school_logo" class="custom-file-input" id="chooseFile">
+                                <label class="custom-file-label" for="chooseFile">Select file</label>
                             </div>
                             <div class="form-group {{ $errors->has('facebook') ? 'has-error' : '' }}">
                                 <label for="facebook">{{ trans('cruds.settings.fields.facebook') }}*</label>
