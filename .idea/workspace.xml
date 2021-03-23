@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="706072f5-83c9-4c26-bea6-8f85822d3a50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SiteSettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SiteSettingsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SliderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreSettingsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreSettingsRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/cruds.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/cruds.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/sliders/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sliders/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/sliders/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sliders/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +156,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -217,7 +206,8 @@
       <workItem from="1615905619207" duration="10994000" />
       <workItem from="1616061286040" duration="1238000" />
       <workItem from="1616145388347" duration="22230000" />
-      <workItem from="1616402676427" duration="2598000" />
+      <workItem from="1616402676427" duration="3300000" />
+      <workItem from="1616489659369" duration="1832000" />
     </task>
     <servers />
   </component>
@@ -241,10 +231,10 @@
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
     <state x="739" y="293" key="FileChooserDialogImpl/0.28.1920.1014@0.28.1920.1014" timestamp="1616087873508" />
-    <state x="426" y="170" key="SettingsEditor" timestamp="1615928271102">
+    <state x="426" y="170" key="SettingsEditor" timestamp="1616490163896">
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
-    <state x="426" y="170" key="SettingsEditor/0.28.1920.1014@0.28.1920.1014" timestamp="1615928271102" />
+    <state x="426" y="170" key="SettingsEditor/0.28.1920.1014@0.28.1920.1014" timestamp="1616490163896" />
     <state width="648" height="446" key="SwitcherDM" timestamp="1616171753305">
       <screen x="0" y="28" width="1920" height="1014" />
     </state>

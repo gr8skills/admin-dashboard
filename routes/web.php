@@ -34,8 +34,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
     Route::resource('indexCMS', 'CMSIndexController');
 
-    //CMS Index
+    //CMS Principal's welcome
     //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
     Route::resource('aboutUsLeadership', 'CMSAboutUsLeadershipController');
+
+    //CMS History
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('aboutUsHistory', 'CMSAboutUsHistoryController');
+
+    //
 
 });
