@@ -34,7 +34,7 @@ class MainMenuController extends Controller
     public function store(StoreMainMenuRequest $request)
     {
         $menu = MainMenu::create($request->all());
-        return redirect()->route('admin.mainMenu.index');
+        return redirect()->route('admin.main-menu.index');
     }
 
     public function edit(MainMenu $mainMenu)
@@ -47,7 +47,7 @@ class MainMenuController extends Controller
     public function update(UpdateMainMenuRequest $request, MainMenu $mainMenu)
     {
         $mainMenu->update($request->all());
-        return redirect()->route('admin.mainMenu.index');
+        return redirect()->route('admin.main-menu.index');
     }
 
     public function show(MainMenu $mainMenu)

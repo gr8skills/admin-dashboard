@@ -134,13 +134,30 @@
                 </p>
             </div>
             <div class="custom-file-control thumbnail"
-                             style="width: 200px; height: 150px;">
-{{--                            <img src="{{url('/images/slides'.isset($slider) ? $slider->location : '')}}"--}}
-{{--                                 alt="School Logo Image"/>--}}
+                             style="width: 750px; height: 260px;">
+                            <img src="{{url('/images/slides/'.$slider->location)}}"
+                                 alt="Slide Image" width="750" height="250" />
             </div>
             <div class="custom-file form-group">
-                <input type="file" name="location" class="custom-file-input" id="chooseFile">
+                <input type="file" name="location" class="custom-file-input" id="chooseFile" value="{{ $slider->location }}">
                 <label class="custom-file-label" for="chooseFile">Select Slide Image</label>
+            </div>
+            <hr>
+
+            <div class="form-group {{ $errors->has('type') ? 'has-error' : '' }}">
+                <label for="type">{{ trans('cruds.slider.fields.type') }}*</label>
+                <select name="type" id="roles" class="form-control select2">
+                    <option value="0" {{$slider->type==0 ? 'selected' : ''}}>Hide</option>
+                    <option value="1" {{$slider->type==1 ? 'selected' : ''}}>Show</option>
+                </select>
+                @if($errors->has('type'))
+                    <p class="help-block">
+                        {{ $errors->first('type') }}
+                    </p>
+                @endif
+                <p class="helper-block">
+                    {{ trans('cruds.menu.fields.visibility_helper') }}
+                </p>
             </div>
 
 

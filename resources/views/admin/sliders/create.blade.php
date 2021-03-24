@@ -95,13 +95,13 @@
                     {{ trans('cruds.slider.fields.data_resource_uuid_helper') }}
                 </p>
             </div>
-{{--            <div class="custom-file-control thumbnail"--}}
-{{--                 style="width: 200px; height: 150px;">--}}
-{{--                <img src="{{url('/images/slides'.isset($slider) ? $slider->location : '')}}"--}}
-{{--                     alt="School Logo Image"/>--}}
-{{--            </div>--}}
+            <div class="custom-file-control thumbnail"
+                 style="width: 200px; height: 150px;">
+                <img src="{{url('/images/slides/'.$slider->location)}}"
+                     alt="School Logo Image" width="700" height="350"/>
+            </div>
             <div class="custom-file form-group">
-                <input type="file" name="location" class="custom-file-input" id="chooseFile">
+                <input type="file" name="location" class="custom-file-input" id="chooseFile" required>
                 <label class="custom-file-label" for="chooseFile">Select Slide Image</label>
             </div>
             <div class="form-group {{ $errors->has('location') ? 'has-error' : '' }}">
@@ -116,21 +116,21 @@
             </div>
 
 
-{{--            <div class="form-group {{ $errors->has('visibility') ? 'has-error' : '' }}">--}}
-{{--                <label for="roles">{{ trans('cruds.menu.fields.visibility') }}*</label>--}}
-{{--                <select name="roles[]" id="roles" class="form-control select2">--}}
-{{--                    <option value="0" {{$menu->visibility==0 ? 'selected' : ''}}>Hide</option>--}}
-{{--                    <option value="1" {{$menu->visibility==1 ? 'selected' : ''}}>Show</option>--}}
-{{--                </select>--}}
-{{--                @if($errors->has('visibility'))--}}
-{{--                    <p class="help-block">--}}
-{{--                        {{ $errors->first('visibility') }}--}}
-{{--                    </p>--}}
-{{--                @endif--}}
-{{--                <p class="helper-block">--}}
-{{--                    {{ trans('cruds.menu.fields.visibility_helper') }}--}}
-{{--                </p>--}}
-{{--            </div>--}}
+            <div class="form-group {{ $errors->has('type') ? 'has-error' : '' }}">
+                <label for="type">{{ trans('cruds.slider.fields.type') }}*</label>
+                <select name="type" id="roles" class="form-control select2">
+                    <option value="0" {{$slider->type==0 ? 'selected' : ''}}>Hide</option>
+                    <option value="1" {{$slider->type==1 ? 'selected' : ''}}>Show</option>
+                </select>
+                @if($errors->has('type'))
+                    <p class="help-block">
+                        {{ $errors->first('type') }}
+                    </p>
+                @endif
+                <p class="helper-block">
+                    {{ trans('cruds.menu.fields.visibility_helper') }}
+                </p>
+            </div>
             <div>
                 <input class="btn btn-danger" type="submit" value="{{ trans('global.save') }}">
             </div>

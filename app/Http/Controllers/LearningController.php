@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CMSAboutUsHistoryController extends Controller
+class LearningController extends Controller
 {
     //
 }

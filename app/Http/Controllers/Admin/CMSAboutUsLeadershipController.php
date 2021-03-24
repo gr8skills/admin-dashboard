@@ -64,39 +64,35 @@ class CMSAboutUsLeadershipController extends Controller
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\CMSAboutUsLeadership  $cMSAboutUsLeadership
-     */
+
     public function update(UpdateAboutUsLeadershipRequest $request, CMSAboutUsLeadership $cMSAboutUsLeadership)
     {
-        dd($request->all());
-        //
+
+
+
         abort_if(Gate::denies('content_management_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $principalImage = $request->file('principal_image');
-        $principalImageS = $request->file('principal_image');
+        $file = $request->file('principal_image');
 
-        if(!is_null($principalImage))
-            $principalImage =  time().'.'.$principalImage->getClientOriginalName();
+        if ($file != ''){
+            $path = public_path() . '/images';
 
-        if(!is_null($principalImage))
-            $path = $principalImageS->storeAs('public/images', $principalImage);
-        else
-            $path = '';
-
-        if(!is_null($principalImage))
+            if ($cMSAboutUsLeadership->principal_image != '' && $cMSAboutUsLeadership->principal_image != null){
+                $file_old = $path.$cMSAboutUsLeadership->principal_image;
+                unlink($file_old);
+            }
+            $principalImage =  $file->getClientOriginalName();
+            $path = $file->storeAs('public/images', $principalImage);
             $request->principal_image->move(public_path('images'), $principalImage);
+            $request->principal_image = $path;
+            $cMSAboutUsLeadership->update($request->all());
+            $index = CMSAboutUsLeadership::orderBy('id', 'DESC')->first();
+            $index->principal_image = $principalImage;
+            $index->save();
 
+        }
 
-        $request->principal_image = $path;
-
-
-        $index = CMSAboutUsLeadership::update($request->all());
-        $index->principal_image = $principalImage;
-        $index->save();
-        return redirect()->route('admin.leadershipCMS.index');
+        return redirect()->route('admin.about-us-principals-welcome.index');
     }
 
     /**

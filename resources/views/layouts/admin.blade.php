@@ -207,7 +207,7 @@
 
         tinymce.init({
             selector:'textarea',
-            height: 500,
+            height: 200,
             menubar: false,
             plugins: [
                 'advlist autolink lists link image charmap print preview anchor',
@@ -220,7 +220,7 @@
                 'removeformat | help',
             content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
             init_instance_callback : function(editor) {
-                var freeTiny = document.querySelector('.tox .tox-notification--in');
+                let freeTiny = document.querySelector('.tox .tox-notification--in');
                 freeTiny.style.display = 'none';
             }
         });

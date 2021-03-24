@@ -135,8 +135,8 @@
 {{--                            </div>--}}
                             <div class="custom-file-control thumbnail"
                                  style="width: 200px; height: 150px;">
-                                <img src="{{url('/images/'.isset($settings) ? $settings->school_logo : '')}}"
-                                     alt="School Logo Image"/>
+                                <img src="{{url('/images/'.$settings->school_logo)}}"
+                                     alt="School Logo Image" width="200" height="150"/>
                             </div>
                             <div class="custom-file form-group">
                                 <input type="file" name="school_logo" class="custom-file-input" id="chooseFile">

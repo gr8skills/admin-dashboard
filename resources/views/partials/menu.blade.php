@@ -22,7 +22,7 @@
             </li>
             @can('mainMenu_access')
                 <li class="nav-item">
-                    <a href="{{ route("admin.mainMenu.index") }}" class="nav-link">
+                    <a href="{{ route("admin.main-menu.index") }}" class="nav-link">
                         <p>
                             <i class="fas fa-fw fa-bars">
 
@@ -91,6 +91,7 @@
                     </div>
                 </li>
             @endcan
+
             @can('content_management_access')
                 <li class="nav-item has-treeview {{ request()->is('admin/permissions*') ? 'menu-open' : '' }} {{ request()->is('admin/roles*') ? 'menu-open' : '' }} {{ request()->is('admin/users*') ? 'menu-open' : '' }}">
                     <a class="nav-link" data-toggle="collapse" href="#content_management">
@@ -106,7 +107,7 @@
                         <ul class="nav">
                             @can('content_management_access')
                                 <li class="nav-item">
-                                    <a href="{{ route("admin.indexCMS.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
+                                    <a href="{{ route("admin.index-cms.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
                                         <i class="fa-fw fas fa-book">
 
                                         </i>
@@ -115,6 +116,17 @@
                                     </a>
                                 </li>
                             @endcan
+                                @can('content_management_access')
+                                    <li class="nav-item">
+                                        <a href="{{ route("admin.aboutus.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
+                                            <i class="fa-fw fas fa-users-cog">
+
+                                            </i>
+                                            <span> About Us Page </span>
+                                            {{--                                        <span>{{ trans('cruds.permission.title') }}</span>--}}
+                                        </a>
+                                    </li>
+                                @endcan
                             @can('content_management_access')
                                     <li class="nav-item has-treeview {{ request()->is('admin/permissions*') ? 'menu-open' : '' }} {{ request()->is('admin/roles*') ? 'menu-open' : '' }} {{ request()->is('admin/users*') ? 'menu-open' : '' }}">
                                         <a class="nav-link" data-toggle="collapse" href="#about_us">
@@ -128,7 +140,7 @@
                                         <div class="collapse hid" id="about_us">
                                             <ul class="nav">
                                                 <li class="nav-item">
-                                                    <a href="{{ route("admin.aboutUsLeadership.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
+                                                    <a href="{{ route("admin.about-us-principals-welcome.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
                                                         <i class="fa-fw fas fa-road">
 
                                                         </i>
@@ -136,7 +148,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="{{ route("admin.aboutUsLeadership.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
+                                                    <a href="{{ route("admin.about-us-history.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
                                                         <i class="fa-fw fas fa-history">
 
                                                         </i>
@@ -144,15 +156,15 @@
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="{{ route("admin.roles.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
+                                                    <a href="{{ route("admin.about-us-mission-vision.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
                                                         <i class="fa-fw fas fa-signal">
 
                                                         </i>
-                                                        <span>Our Vision and Mission</span>
+                                                        <span>Our Mission & Vision</span>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="{{ route("admin.roles.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
+                                                    <a href="{{ route("admin.about-us-leadership.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
                                                         <i class="fa-fw fas fa-heartbeat">
 
                                                         </i>
@@ -164,6 +176,28 @@
                                         </div>
 
                                 </li>
+                            @endcan
+                            @can('content_management_access')
+                                    <li class="nav-item">
+                                        <a href="{{ route("admin.admission.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
+                                            <i class="fa-fw fas fa-chalkboard-teacher">
+
+                                            </i>
+                                            <span>Admission</span>
+                                            {{--                                        <span>{{ trans('cruds.permission.title') }}</span>--}}
+                                        </a>
+                                    </li>
+                                @endcan
+                            @can('content_management_access')
+                                <li class="nav-item">
+                                        <a href="{{ route("admin.emis.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
+                                            <i class="fa-fw fas fa-user-shield">
+
+                                            </i>
+                                            <span>BLOOMBREED EMIS</span>
+                                            {{--                                        <span>{{ trans('cruds.permission.title') }}</span>--}}
+                                        </a>
+                                    </li>
                             @endcan
                         </ul>
                     </div>

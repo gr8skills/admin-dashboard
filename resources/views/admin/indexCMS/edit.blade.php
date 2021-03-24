@@ -9,7 +9,7 @@
     </div>
 
     <div class="card-body">
-        <form action="{{ route("admin.indexCMS.update", [$indexPage->id]) }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route("admin.index-cms.update", [$indexPage->id]) }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">

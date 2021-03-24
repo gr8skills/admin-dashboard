@@ -44,13 +44,37 @@ class SiteSettingsController extends Controller
           $request->school_logo = $imageName;
         */
         $file = $request->file('school_logo');
-        $originalname = $file->getClientOriginalName();
-        $path = $file->storeAs('public/images', $originalname);
-        $request->school_logo->move(public_path('images'), $originalname);
-        $request->school_logo = $path;
-        $settings = SiteSettings::create($request->all());
-        $settings->school_logo = $originalname;
-        $settings->save();
+        if($file != '') {
+            $path = public_path() . '/images';
+
+            $settings = SiteSettings::create($request->all());
+
+//            //code for remove old file
+//            if ($settings->school_logo != '' && $settings->school_logo != null) {
+//                $file_old = $path . $settings->school_logo;
+//                if (!is_null($file_old))
+//                    unlink($file_old);
+//            }
+
+            //upload new file
+            $originalname =  time().'.'.$file->getClientOriginalName();
+
+            $path = $file->storeAs('public/images', $originalname);
+            $request->school_logo->move(public_path('images'), $originalname);
+            $request->school_logo = $path;
+
+            $settings->school_logo = $originalname;
+            $settings->save();
+        }
+        $settings = SiteSettings::orderBy('id', 'DESC')->first();
+
+//        $originalname = $file->getClientOriginalName();
+//        $path = $file->storeAs('public/images', $originalname);
+//        $request->school_logo->move(public_path('images'), $originalname);
+//        $request->school_logo = $path;
+//        $settings = SiteSettings::create($request->all());
+//        $settings->school_logo = $originalname;
+//        $settings->save();
         return redirect()->route('admin.sitesettings.index', compact($settings));
     }
 
@@ -71,7 +95,29 @@ class SiteSettingsController extends Controller
     public function update(UpdateSettingsRequest $request, SiteSettings $siteSettings)
     {
         abort_if(Gate::denies('settings_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-        $siteSettings->update($request->all());
+
+        $file = $request->file('school_logo');
+
+        if($file != '') {
+            $path = public_path() . '/images/';
+
+            //code for remove old file
+            if ($siteSettings->school_logo != '' && $siteSettings->school_logo != null) {
+                $file_old = $path . $siteSettings->school_logo;
+                unlink($file_old);
+            }
+
+            //upload new file
+            $originalname =  time().'.'.$file->getClientOriginalName();
+
+            $path = $file->storeAs('public/images', $originalname);
+            $request->school_logo->move(public_path('images'), $originalname);
+            $request->school_logo = $path;
+
+            $siteSettings->update($request->all());
+            $siteSettings->school_logo = $originalname;
+            $siteSettings->save();
+        }
 
         return redirect()->route('admin.sitesettings.index');
     }

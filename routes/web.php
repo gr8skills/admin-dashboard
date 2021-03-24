@@ -24,7 +24,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
 
     //MainMenu
     Route::delete('menus/destroy', 'MainMenuController@massDestroy')->name('menus.massDestroy');
-    Route::resource('mainMenu', 'MainMenuController');
+    Route::resource('main-menu', 'MainMenuController');
 
     //Sliders
     Route::delete('sliders/destroy', 'SliderController@massDestroy')->name('sliders.massDestroy');
@@ -32,16 +32,35 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
 
     //CMS Index
     //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
-    Route::resource('indexCMS', 'CMSIndexController');
+    Route::resource('index-cms', 'CMSIndexController');
 
     //CMS Principal's welcome
     //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
-    Route::resource('aboutUsLeadership', 'CMSAboutUsLeadershipController');
+    Route::resource('about-us-principals-welcome', 'CMSAboutUsLeadershipController');
 
     //CMS History
     //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
-    Route::resource('aboutUsHistory', 'CMSAboutUsHistoryController');
+    Route::resource('about-us-history', 'CMSAboutUsHistoryController');
 
-    //
+    //CMS Our Vision and Mission
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('about-us-mission-vision', 'CMSAboutUsMissionVisionController');
+
+    //CMS Leadership
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('about-us-leadership', 'CMSAboutUsRealLeadershipController');
+
+    //Admission
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('admission', 'AdmissionController');
+
+    //Emis
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('emis', 'EMISController');
+
+    //About Us
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('aboutus', 'AboutUsController');
+
 
 });

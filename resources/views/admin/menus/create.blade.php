@@ -9,7 +9,7 @@
     </div>
 
     <div class="card-body">
-        <form action="{{ route("admin.mainMenu.store") }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route("admin.main-menu.store") }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                 <label for="name">{{ trans('cruds.menu.fields.name') }}*</label>

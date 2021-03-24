@@ -52,14 +52,26 @@
                             {{ $slider->position }}
                         </td>
                     </tr>
-{{--                    <tr>--}}
-{{--                        <th>--}}
-{{--                            {{ trans('cruds.menu.fields.visibility') }}--}}
-{{--                        </th>--}}
-{{--                        <td>--}}
-{{--                            {{ $menu->visibility }}--}}
-{{--                        </td>--}}
-{{--                    </tr>--}}
+                    <tr>
+                        <th>
+                            {{ trans('cruds.slider.visibility') }}
+                        </th>
+                        <td>
+                            {{ $slider->type }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Image
+                        </th>
+                        <td>
+                            <div class="custom-file-control thumbnail"
+                                 style="width: 750px; height: 250px;">
+                                <img src="{{url('/images/slides/'.$slider->location)}}"
+                                     alt="Slide Image" width="750" height="250" />
+                            </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <a style="margin-top:20px;" class="btn btn-default" href="{{ url()->previous() }}">

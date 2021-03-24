@@ -10,7 +10,7 @@
     </div>
 
     <div class="card-body">
-        <form action="{{ route("admin.aboutUsLeadership.update", [$leadership->id]) }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route("admin.about-us-principals-welcome.update", [$leadership->id]) }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
@@ -26,13 +26,13 @@
                     {{ trans('cruds.menu.fields.name_helper') }}
                 </p>
             </div>
-            <div class="custom-file-control thumbnail"
-                 style="width: 200px; height: 150px;">
-                {{--                            <img src="{{url('/images/slides'.isset($slider) ? $slider->location : '')}}"--}}
-                {{--                                 alt="School Logo Image"/>--}}
+            <div class="custom-file-control thumbnail form-group"
+                 style="width: 500px; height: 270px;">
+                <img src="{{url('/images/'.$leadership->principal_image)}}"
+                     alt="Principal's Image" width="400" height="250" class="" />
             </div>
             <div class="custom-file form-group">
-                <input type="file" name="principal_image" class="custom-file-input" id="chooseFile">
+                <input type="file" name="principal_image" class="custom-file-input form-control" id="chooseFile">
                 <label class="custom-file-label" for="chooseFile">Select Principal's Image: </label>
             </div>
 

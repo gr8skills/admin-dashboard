@@ -79,7 +79,7 @@ class CMSIndexController extends Controller
         $index->row2_pic3 = $row2_picture3;
         $index->row2_pic4 = $row2_picture4;
         $index->save();
-        return redirect()->route('admin.indexCMS.index');
+        return redirect()->route('admin.index-cms.index');
 
 //        $CMSIndex->update($request->all());
 //

@@ -126,6 +126,7 @@ return [
         'title'          => 'Slides',
         'navigation'    => 'Slides',
         'title_singular' => 'Slide',
+        'visibility' => 'Visible',
         'fields'         => [
             'id'                       => 'ID',
             'id_helper'                => '',
@@ -145,7 +146,7 @@ return [
             'data_resource_uuid_helper' => '',
             'location'                 => 'Location',
             'location_helper'          => '',
-            'type'                 => 'Type',
+            'type'                 => 'Visibility',
             'type_helper'          => '',
             'position'                    => 'Position',
             'position_helper'             => '',

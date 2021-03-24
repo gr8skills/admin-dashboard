@@ -35,10 +35,10 @@ class SliderController extends Controller
         $file = $request->file('location');
         $originalname =  time().'.'.$file->getClientOriginalName();
         $path = $file->storeAs('public/images/slides', $originalname);
-        $request->school_logo->move(public_path('images'), $originalname);
-        $request->school_logo = $path;
+        $request->location->move(public_path('images'), $originalname);
+        $request->location = $path;
         $slider = Slider::create($request->all());
-        $slider->school_logo = $originalname;
+        $slider->location = $originalname;
         $slider->save();
         return redirect()->route('admin.sliders.index');
     }
@@ -51,7 +51,29 @@ class SliderController extends Controller
 
     public function update(UpdateSliderRequest $request, Slider $slider)
     {
-        $slider->update($request->all());
+
+        $file = $request->file('location');
+
+        if($file != '') {
+            $path = public_path() . '/images/slides/';
+
+            //code for remove old file
+            if ($slider->location != '' && $slider->location != null) {
+                $file_old = $path . $slider->location;
+                unlink($file_old);
+            }
+
+            //upload new file
+            $originalname =  time().'.'.$file->getClientOriginalName();
+
+            $path = $file->storeAs('public/images/slides', $originalname);
+            $request->location->move(public_path('images/slides'), $originalname);
+            $request->location = $path;
+
+            $slider->update($request->all());
+            $slider->location = $originalname;
+            $slider->save();
+        }
         return redirect()->route('admin.sliders.index');
     }
 
