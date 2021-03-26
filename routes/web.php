@@ -62,5 +62,25 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
     Route::resource('aboutus', 'AboutUsController');
 
+    //Learning
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('learning', 'LearningController');
+
+    //Pre School
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('preschool', 'PreSchoolController');
+
+    //Elementary School
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('elementaryschool', 'ElementarySchoolController');
+
+    //Middle School
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('middleschool', 'MiddleSchoolController');
+
+    //High School
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('highschool', 'HighSchoolController');
+
 
 });
