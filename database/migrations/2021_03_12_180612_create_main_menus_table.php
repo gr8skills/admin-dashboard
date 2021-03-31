@@ -36,7 +36,7 @@ class CreateMainMenusTable extends Migration
             'submenu' => 'PRINCIPAL WELCOME=https://bloombreedschools.org/directors-welcome.html,OUR HISTORY=https://bloombreedschools.org/our-history.html,OUR MISSION AND VISION=https://bloombreedschools.org/our-mission-and-vision.html,LEADERSHIP=https://bloombreedschools.org/leadership.html',
             'link' => 'https://bloombreedschools.org/about-us.html',
             'visibility' => '1',
-            'position' => '',
+            'position' => '1',
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ));
@@ -47,7 +47,7 @@ class CreateMainMenusTable extends Migration
             'submenu' => '',
             'link' => 'https://bloombreedschools.org/admissions.html',
             'visibility' => '1',
-            'position' => '',
+            'position' => '2',
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ));
@@ -58,7 +58,7 @@ class CreateMainMenusTable extends Migration
             'submenu' => 'PRESCHOOL=https://bloombreedschools.org/preschool.html,ELEMENTARY SCHOOL=https://bloombreedschools.org/es.html,MIDDLE SCHOOL=https://bloombreedschools.org/middle-school.html,HIGH SCHOOL=https://bloombreedschools.org/high-school.html,THE INNOVATION INITIATIVE=https://bloombreedschools.org/the-innovation-initiative.html',
             'link' => 'https://bloombreedschools.org/learning.html',
             'visibility' => '1',
-            'position' => '',
+            'position' => '3',
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ));
@@ -69,7 +69,7 @@ class CreateMainMenusTable extends Migration
             'submenu' => '',
             'link' => 'https://bloombreedschools.org/student-life.html',
             'visibility' => '1',
-            'position' => '',
+            'position' => '4',
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ));
@@ -80,7 +80,7 @@ class CreateMainMenusTable extends Migration
             'submenu' => '',
             'link' => 'https://bloombreedschools.org/child-protection.html',
             'visibility' => '1',
-            'position' => '',
+            'position' => '5',
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ));
@@ -91,7 +91,7 @@ class CreateMainMenusTable extends Migration
             'submenu' => '',
             'link' => 'http://bloombreedschools.vm-host.net/',
             'visibility' => '1',
-            'position' => '',
+            'position' => '6',
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ));

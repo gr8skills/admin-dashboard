@@ -36,7 +36,6 @@ class CreateSiteSettingsTable extends Migration
         });
 
         Model::unguard();
-//        DB::statement('SET FOREIGN_KEY_CHECKS=0');
 
         $defaultSettings = [
             [
@@ -47,7 +46,7 @@ class CreateSiteSettingsTable extends Migration
                 'school_phone2' => '+234 807 515 4825',
                 'school_address1'   => 'Boskel Road, Off Port Harcourt/Aba Expressway, After Eleme junction Port Harcourt. , ',
                 'school_address2'   => 'Opposite NTA, Off NTA-Choba Road Port-Harcourt',
-                'school_logo' => 'images/logo.png',
+                'school_logo' => 'logo.png',
                 'quick_links'   => 'Inquire, Apply Now',
                 'facebook'  => 'https://web.facebook.com/bloombreedschools.org/?_rdc=1&_rdr',
                 'instagram' => 'https://www.instagram.com/bloombreedschools_day/',

@@ -21,7 +21,7 @@ class CreateHighSchoolsTable extends Migration
             $table->longText('bolded')->nullable();
             $table->longText('content1')->nullable();
             $table->string('title2')->nullable();
-            $table->string('content2')->nullable();
+            $table->longText('content2')->nullable();
             $table->string('link')->nullable();
             $table->string('pic1')->nullable();
             $table->string('pic1_title')->nullable();

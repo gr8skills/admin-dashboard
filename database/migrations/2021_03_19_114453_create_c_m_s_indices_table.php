@@ -19,7 +19,7 @@ class CreateCMSIndicesTable extends Migration
             $table->increments('id');
             $table->string('row1_title')->nullable();
             $table->string('row1_picture')->nullable();
-            $table->string('row1_content')->nullable();
+            $table->longText('row1_content')->nullable();
             $table->string('row2_pic1')->nullable();
             $table->string('row2_pic2')->nullable();
             $table->string('row2_pic3')->nullable();
@@ -28,12 +28,12 @@ class CreateCMSIndicesTable extends Migration
             $table->string('row2_title2')->nullable();
             $table->string('row2_title3')->nullable();
             $table->string('row2_title4')->nullable();
-            $table->string('row2_content1')->nullable();
-            $table->string('row2_content2')->nullable();
-            $table->string('row2_content3')->nullable();
-            $table->string('row2_content4')->nullable();
+            $table->longText('row2_content1')->nullable();
+            $table->longText('row2_content2')->nullable();
+            $table->longText('row2_content3')->nullable();
+            $table->longText('row2_content4')->nullable();
             $table->string('row3_title')->nullable();
-            $table->string('row3_content')->nullable();
+            $table->longText('row3_content')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

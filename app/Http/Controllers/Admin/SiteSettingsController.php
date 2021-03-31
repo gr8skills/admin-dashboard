@@ -17,10 +17,9 @@ class SiteSettingsController extends Controller
     public function index()
     {
         abort_if(Gate::denies('settings_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-        $settings = SiteSettings::where('active_setting', 0)
+        $settings = SiteSettings::where('active_setting', 1)
         ->orderBy('id', 'DESC')
         ->first();
-//        dd($settings);
         $tabs = [
             'General',
             'Main Menu',
@@ -114,7 +113,14 @@ class SiteSettingsController extends Controller
             $request->school_logo->move(public_path('images'), $originalname);
             $request->school_logo = $path;
 
+
+
+            $siteSettings = SiteSettings::where('active_setting', 1)
+                ->orderBy('id', 'DESC')
+                ->first();
+
             $siteSettings->update($request->all());
+
             $siteSettings->school_logo = $originalname;
             $siteSettings->save();
         }

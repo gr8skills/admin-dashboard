@@ -246,8 +246,8 @@
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="{{ route("admin.about-us-leadership.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
-                                                        <i class="fa-fw fas fa-heartbeat">
+                                                    <a href="{{ route("admin.innovation.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
+                                                        <i class="fa-fw fab fa-accusoft">
 
                                                         </i>
                                                         <span> The Innovation Initiative </span>
@@ -261,8 +261,18 @@
                                 @endcan
                             @can('content_management_access')
                                 <li class="nav-item">
-                                        <a href="{{ route("admin.emis.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
+                                        <a href="{{ route("admin.studentlife.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
                                             <i class="fa-fw fas fa-user-shield">
+
+                                            </i>
+                                            <span>STUDENT LIFE</span>
+                                        </a>
+                                    </li>
+                            @endcan
+                            @can('content_management_access')
+                                <li class="nav-item">
+                                        <a href="{{ route("admin.emis.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
+                                            <i class="fa-fw fas fa-band-aid">
 
                                             </i>
                                             <span>BLOOMBREED EMIS</span>

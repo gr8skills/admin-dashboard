@@ -26,9 +26,9 @@
                 </p>
             </div>
             <div class="custom-file-control thumbnail"
-                 style="width: 200px; height: 150px;">
-                {{--                            <img src="{{url('/images/slides'.isset($slider) ? $slider->location : '')}}"--}}
-                {{--                                 alt="School Logo Image"/>--}}
+                 style="width: 210px; height: 460px;">
+                      <img src="{{url('/images/'.$indexPage->row1_picture)}}"
+                               alt="Image 1" height="200" width="450"/>
             </div>
             <div class="custom-file form-group">
                 <input type="file" name="row1_picture" class="custom-file-input" id="chooseFile">
@@ -61,20 +61,41 @@
             <div class="form-group {{ $errors->has('row1_picture') ? 'has-error' : '' }}">
                 <label class="h2" for="row2_pic1">Picture Galleries</label>
 
+                <div class="custom-file-control thumbnail"
+                     style="width: 210px; height: 460px;">
+                    <img src="{{url('/images/'.$indexPage->row2_pic1)}}"
+                         alt="Image 2" height="200" width="450"/>
+                </div>
                 <div class="col-md-3">
                     <input type="file" name="row2_pic1" class="custom-file-input" id="chooseFile2">
                     <label class="custom-file-label" for="chooseFile2">Select Image: </label>
                 </div>
                 <hr>
+                <div class="custom-file-control thumbnail"
+                     style="width: 210px; height: 460px;">
+                    <img src="{{url('/images/'.$indexPage->row2_pic2)}}"
+                         alt="Image 2" height="200" width="450"/>
+                </div>
                 <div class="col-md-3">
                     <input type="file" name="row2_pic2" class="custom-file-input" id="chooseFile3">
                     <label class="custom-file-label" for="chooseFile3">Select Image: </label>
                 </div>
                 <hr>
+                <div class="custom-file-control thumbnail"
+                     style="width: 210px; height: 460px;">
+                    <img src="{{url('/images/'.$indexPage->row2_pic3)}}"
+                         alt="Image 2" height="200" width="450"/>
+                </div>
                 <div class="col-md-3">
                     <input type="file" name="row2_pic3" class="custom-file-input" id="chooseFile4">
                     <label class="custom-file-label" for="chooseFile4">Select Image: </label>
-                </div><hr>
+                </div>
+                <hr>
+                <div class="custom-file-control thumbnail"
+                     style="width: 210px; height: 460px;">
+                    <img src="{{url('/images/'.$indexPage->row2_pic4)}}"
+                         alt="Image 2" height="200" width="450"/>
+                </div>
                 <div class="col-md-3">
                     <input type="file" name="row2_pic4" class="custom-file-input" id="chooseFile5">
                     <label class="custom-file-label" for="chooseFile5">Select Image: </label>

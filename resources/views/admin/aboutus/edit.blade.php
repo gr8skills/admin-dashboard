@@ -27,6 +27,29 @@
                 </p>
             </div>
 
+            <div class="form-group {{ $errors->has('sub_main_title') ? 'has-error' : '' }}">
+                <label for="sub_main_title">Sub Main Title</label>
+                <input type="text" id="sub_main_title" name="sub_main_title" class="form-control" value="{{ old('sub_main_title', isset($about) ? $about->sub_main_title : '') }}" >
+                @if($errors->has('sub_main_title'))
+                    <p class="help-block">
+                        {{ $errors->first('sub_main_title') }}
+                    </p>
+                @endif
+                <p class="helper-block">
+                    {{ trans('cruds.menu.fields.name_helper') }}
+                </p>
+            </div>
+
+            <div class="custom-file-control thumbnail"
+                 style="width: 210px; height: 460px;">
+                <img src="{{"data:image/" .$about->imageType. ";base64," .base64_encode( $about->img )}}"
+                     alt="Image 1" height="200" width="450"/>
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="img" class="custom-file-input" id="chooseFile">
+                <label class="custom-file-label" for="chooseFile">Select Image: </label>
+            </div>
+
             <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
                 <label for="title">Title</label>
                 <input type="text" id="title" name="title" class="form-control" value="{{ old('title', isset($about) ? $about->title : '') }}" >

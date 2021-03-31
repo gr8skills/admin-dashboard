@@ -67,9 +67,6 @@ class CMSAboutUsLeadershipController extends Controller
 
     public function update(UpdateAboutUsLeadershipRequest $request, CMSAboutUsLeadership $cMSAboutUsLeadership)
     {
-
-
-
         abort_if(Gate::denies('content_management_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         $file = $request->file('principal_image');
@@ -85,12 +82,20 @@ class CMSAboutUsLeadershipController extends Controller
             $path = $file->storeAs('public/images', $principalImage);
             $request->principal_image->move(public_path('images'), $principalImage);
             $request->principal_image = $path;
-            $cMSAboutUsLeadership->update($request->all());
+
+            $leadership = CMSAboutUsLeadership::orderBy('id', 'DESC')
+                ->first();
+            $leadership->update($request->all());
             $index = CMSAboutUsLeadership::orderBy('id', 'DESC')->first();
             $index->principal_image = $principalImage;
             $index->save();
 
+        }else{
+            $leadership = CMSAboutUsLeadership::orderBy('id', 'DESC')
+                ->first();
+            $leadership->update($request->all());
         }
+
 
         return redirect()->route('admin.about-us-principals-welcome.index');
     }

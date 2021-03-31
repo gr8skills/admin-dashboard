@@ -192,6 +192,12 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => DB::raw('CURRENT_TIMESTAMP'),
                 'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
             ],
+            [
+                'id'         => '31',
+                'title'      => 'content_management_access',
+                'created_at' => DB::raw('CURRENT_TIMESTAMP'),
+                'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
+            ],
 
         ];
 

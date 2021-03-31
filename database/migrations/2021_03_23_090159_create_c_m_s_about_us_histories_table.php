@@ -18,7 +18,7 @@ class CreateCMSAboutUsHistoriesTable extends Migration
         Schema::create('c_m_s_about_us_histories', function (Blueprint $table) {
             $table->id();
             $table->string('title1')->nullable();
-            $table->string('bolded')->nullable();
+            $table->longText('bolded')->nullable();
             $table->longText('content1')->nullable();
             $table->string('title2')->nullable();
             $table->longText('content2')->nullable();

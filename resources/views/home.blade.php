@@ -24,8 +24,9 @@
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="card-body">
                         @can('settings_access')
-                        <form action="{{ route("admin.sitesettings.store") }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route("admin.sitesettings.update", [$settings->id]) }}" method="POST" enctype="multipart/form-data">
                             @csrf
+                            @method('PUT')
                             <div class="form-group {{ $errors->has('school_name') ? 'has-error' : '' }}">
                                 <label for="school_name">{{ trans('cruds.settings.fields.school_name') }}*</label>
                                 <input type="text" id="name" name="school_name" class="form-control" value="{{ old('school_name', isset($settings) ? $settings->school_name : '') }}" required>

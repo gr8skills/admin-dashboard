@@ -17,7 +17,9 @@ class CreateAboutUsTable extends Migration
     {
         Schema::create('about_us', function (Blueprint $table) {
             $table->id();
+            $table->binary('img')->nullable();
             $table->string('main_title')->nullable();
+            $table->string('sub_main_title')->nullable();
             $table->string('title')->nullable();
             $table->longText('content1')->nullable();
             $table->string('why_bms')->nullable();
@@ -27,7 +29,8 @@ class CreateAboutUsTable extends Migration
         Model::unguard();
         $default = [
             'id' => 1,
-            'main_title' => 'A FUTURE-READY LEARNING COMMUNITY',
+            'main_title' => 'A FUTURE-READY',
+            'sub_main_title' => 'LEARNING COMMUNITY',
             'title' => 'Our mission is one that places great importance on the concept of being “future-ready.”',
             'content1' => 'BMS exists solely to “nurture future-ready individuals to aspire, achieve, and contribute.” We prepare our students by equipping them with 21st Century innovation skills, with an explicit focus on creativity, critical thinking, communication, collaboration, and resilience. It’s important for students to be equipped with the skills they need to thrive in an ever-changing environment. 
 
