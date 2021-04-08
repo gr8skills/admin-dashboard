@@ -33,21 +33,21 @@
                         <th>
                             {{ trans('cruds.slider.fields.alt') }}
                         </th>
-                        <th>
-                            {{ trans('cruds.slider.fields.class') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.slider.fields.data_image_sizes') }}
-                        </th>
-                        <th>
-                            {{ trans('cruds.slider.fields.data_aspect_ratio') }}
-                        </th>
+{{--                        <th>--}}
+{{--                            {{ trans('cruds.slider.fields.class') }}--}}
+{{--                        </th>--}}
+{{--                        <th>--}}
+{{--                            {{ trans('cruds.slider.fields.data_image_sizes') }}--}}
+{{--                        </th>--}}
+{{--                        <th>--}}
+{{--                            {{ trans('cruds.slider.fields.data_aspect_ratio') }}--}}
+{{--                        </th>--}}
                         <th>
                             {{ trans('cruds.slider.fields.data_resource_title') }}
                         </th>
-                        <th>
-                            {{ trans('cruds.slider.fields.data_resource_uuid') }}
-                        </th>
+{{--                        <th>--}}
+{{--                            {{ trans('cruds.slider.fields.data_resource_uuid') }}--}}
+{{--                        </th>--}}
                         <th>
                             {{ trans('cruds.slider.fields.location') }}
                         </th>
@@ -77,21 +77,21 @@
                             <td>
                                 {{ $slider->alt ?? '' }}
                             </td>
-                            <td>
-                                {{ $slider->class ?? '' }}
-                            </td>
-                            <td>
-                                {{ $slider->data_image_sizes ?? '' }}
-                            </td>
-                            <td>
-                                {{ $slider->data_aspect_ratio ?? '' }}
-                            </td>
+{{--                            <td>--}}
+{{--                                {{ $slider->class ?? '' }}--}}
+{{--                            </td>--}}
+{{--                            <td>--}}
+{{--                                {{ $slider->data_image_sizes ?? '' }}--}}
+{{--                            </td>--}}
+{{--                            <td>--}}
+{{--                                {{ $slider->data_aspect_ratio ?? '' }}--}}
+{{--                            </td>--}}
                             <td>
                                 {{ $slider->data_resource_title ?? '' }}
                             </td>
-                            <td>
-                                {{ $slider->data_resource_uuid ?? '' }}
-                            </td>
+{{--                            <td>--}}
+{{--                                {{ $slider->data_resource_uuid ?? '' }}--}}
+{{--                            </td>--}}
                             <td>
                                 {{ $slider->location ?? '' }}
                             </td>
@@ -169,7 +169,7 @@
 
   $.extend(true, $.fn.dataTable.defaults, {
     order: [[ 1, 'asc' ]],
-    pageLength: 100,
+    pageLength: 10,
   });
   $('.datatable-User:not(.ajaxTable)').DataTable({ buttons: dtButtons })
     $('a[data-toggle="tab"]').on('shown.bs.tab', function(e){

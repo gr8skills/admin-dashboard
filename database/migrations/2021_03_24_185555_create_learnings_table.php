@@ -17,6 +17,7 @@ class CreateLearningsTable extends Migration
     {
         Schema::create('learnings', function (Blueprint $table) {
             $table->id();
+            $table->string('pic')->nullable();
             $table->string('main_title')->nullable();
             $table->longText('bolded_text')->nullable();
             $table->longText('content')->nullable();

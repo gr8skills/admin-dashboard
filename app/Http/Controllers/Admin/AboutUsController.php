@@ -20,22 +20,40 @@ class AboutUsController extends Controller
         return view('admin.aboutus.edit', compact('about'));
     }
 
-    public function update(UpdateAboutUsRequest $request, AboutUs $aboutUs)
+    public function update(UpdateAboutUsRequest $request, $aboutUs)
     {
         abort_if(Gate::denies('content_management_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-//        if($request->img != '' ) {
-//            $f = $request->img;
-////            $att = new Attachment;
-//            $att->name = $f->getClientOriginalName();
-//            $att->file = base64_encode(file_get_contents($f->getRealPath()));
-//            $att->mime = $f->getMimeType();
-//            $att->size = $f->getSize();
-//            $request->img = $att;
-//        }
 
-        $about = AboutUs::orderBy('id', 'DESC')
-            ->first();
+
+        $about = AboutUs::find($aboutUs);
+
+        $file1 = $request->file('img1');
+
+        if ($file1 != '') {
+            $path = public_path() . '/images/';
+
+            if ($path . $about->img1) {
+                if ($about->img1 != '' && $about->img1 != null) {
+                    $file_old1 = $path . $about->img1;
+                    unlink($file_old1);
+                }
+            }
+            $img1 = time() .'.'. $file1->getClientOriginalName();
+            $path = $file1->storeAs('public/images', $img1);
+            $request->img1->move(public_path('images/'), $img1);
+            $request->img1 = $img1;
+        }
+
         $about->update($request->all());
+
+
+        $index = AboutUs::orderBy('id', 'DESC')->first();
+
+        if ($file1 != ''){
+            $index->img1 = $img1;
+            $index->save();
+        }
+
         return redirect()->route('admin.aboutus.index');
 
     }

@@ -14,10 +14,19 @@
             @csrf
             @method('PUT')
             <h2 class="h2">LEADERSHIP</h2>
+            <div class="custom-file-control thumbnail"
+                 style="width: 600px; height: 250px;">
+                <img src="{{url('/images/'.$realLeader->main_image )}}"
+                     alt="Image" width="600" height="250"/>
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="main_image" class="custom-file-input" id="chooseFile1">
+                <label class="custom-file-label" for="chooseFile1">Select Image: </label>
+            </div>
             <div class="form-group {{ $errors->has('title1') ? 'has-error' : '' }}">
 
                 <label for="title1">Title</label>
-                <input type="text" id="title1" name="title1" class="form-control" value="{{ old('title1', isset($realLeader) ? $realLeader->title1 : '') }}" required>
+                <input type="text" id="title1" name="title1" class="form-control" value="{{ old('title1', $realLeader->title1 ) }}" required>
                 @if($errors->has('title1'))
                     <p class="help-block">
                         {{ $errors->first('title1') }}
@@ -27,15 +36,17 @@
                     {{ trans('cruds.menu.fields.name_helper') }}
                 </p>
             </div>
-{{--            <div class="custom-file-control thumbnail"--}}
-{{--                 style="width: 200px; height: 150px;">--}}
-{{--                --}}{{--                            <img src="{{url('/images/slides'.isset($slider) ? $slider->location : '')}}"--}}
-{{--                --}}{{--                                 alt="School Logo Image"/>--}}
-{{--            </div>--}}
-{{--            <div class="custom-file form-group">--}}
-{{--                <input type="file" name="principal_image" class="custom-file-input" id="chooseFile">--}}
-{{--                <label class="custom-file-label" for="chooseFile">Select Principal's Image: </label>--}}
-{{--            </div>--}}
+
+            <div class="custom-file-control thumbnail"
+                 style="width: 600px; height: 250px;">
+                <img src="{{url('/images/'.$realLeader->image1)}}"
+                     alt="Image" width="600" height="250"/>
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="image1" class="custom-file-input" id="chooseFile2">
+                <label class="custom-file-label" for="chooseFile2">Select Image: </label>
+            </div>
+
             <div class="form-group {{ $errors->has('image1_name') ? 'has-error' : '' }}">
 
                 <label for="image1_name">Image 1 Name</label>
@@ -60,6 +71,15 @@
                 <p class="helper-block">
                     {{ trans('cruds.menu.fields.submenu_helper') }}
                 </p>
+            </div>
+            <div class="custom-file-control thumbnail"
+                 style="width: 600px; height: 250px;">
+                <img src="{{url('/images/'. $realLeader->image2)}}"
+                     alt="Image"  width="600" height="250" />
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="image2" class="custom-file-input" id="chooseFile3">
+                <label class="custom-file-label" for="chooseFile3">Select Image: </label>
             </div>
 
             <div class="form-group {{ $errors->has('image2_name') ? 'has-error' : '' }}">
@@ -139,6 +159,15 @@
                     {{ trans('cruds.menu.fields.submenu_helper') }}
                 </p>
             </div>
+            <div class="custom-file-control thumbnail"
+                 style="width: 600px; height: 250px;">
+                <img src="{{url('/images/'.$realLeader->lImage1 )}}"
+                     alt="Image"  width="600" height="250"/>
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="lImage1" class="custom-file-input" id="chooseFile4">
+                <label class="custom-file-label" for="chooseFile4">Select Image: </label>
+            </div>
 
             <div class="form-group {{ $errors->has('lImage1_name') ? 'has-error' : '' }}">
 
@@ -166,11 +195,20 @@
                     {{ trans('cruds.menu.fields.name_helper') }}
                 </p>
             </div>
+            <div class="custom-file-control thumbnail"
+                 style="width: 600px; height: 250px;">
+                <img src="{{url('/images/'.$realLeader->lImage2 )}}"
+                     alt="Image"  width="600" height="250"/>
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="lImage2" class="custom-file-input" id="chooseFile5">
+                <label class="custom-file-label" for="chooseFile5">Select Image: </label>
+            </div>
 
             <div class="form-group {{ $errors->has('lImage2_name') ? 'has-error' : '' }}">
 
                 <label for="lImage2_name">Leader Image 2</label>
-                <input type="text" id="lImage2_name" name="lImage2_name" class="form-control" value="{{ old('lImage2_name', isset($realLeader) ? $realLeader->lImage2_name : '') }}" >
+                <input type="text" id="lImage2_name" name="lImage2_name" class="form-control" value="{{ old('lImage2_name', $realLeader->lImage2_name ) }}" >
                 @if($errors->has('lImage2_name'))
                     <p class="help-block">
                         {{ $errors->first('lImage2_name') }}
@@ -183,7 +221,7 @@
             <div class="form-group {{ $errors->has('lImage2_unit') ? 'has-error' : '' }}">
 
                 <label for="lImage2_unit">Leader Image 2 Unit</label>
-                <input type="text" id="lImage2_unit" name="lImage2_unit" class="form-control" value="{{ old('lImage2_unit', isset($realLeader) ? $realLeader->lImage2_unit : '') }}" >
+                <input type="text" id="lImage2_unit" name="lImage2_unit" class="form-control" value="{{ old('lImage2_unit', $realLeader->lImage2_unit ) }}" >
                 @if($errors->has('lImage2_unit'))
                     <p class="help-block">
                         {{ $errors->first('lImage2_unit') }}
@@ -193,11 +231,20 @@
                     {{ trans('cruds.menu.fields.name_helper') }}
                 </p>
             </div>
+            <div class="custom-file-control thumbnail"
+                 style="width: 600px; height: 250px;">
+                <img src="{{url('/images/'. $realLeader->lImage3 )}}"
+                     alt="Image"  width="600" height="250"/>
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="lImage3" class="custom-file-input" id="chooseFile6">
+                <label class="custom-file-label" for="chooseFile6">Select Image: </label>
+            </div>
 
             <div class="form-group {{ $errors->has('lImage3_name') ? 'has-error' : '' }}">
 
                 <label for="lImage3_name">Leader Image 3</label>
-                <input type="text" id="lImage3_name" name="lImage3_name" class="form-control" value="{{ old('lImage3_name', isset($realLeader) ? $realLeader->lImage3_name : '') }}" >
+                <input type="text" id="lImage3_name" name="lImage3_name" class="form-control" value="{{ old('lImage3_name', $realLeader->lImage3_name ) }}" >
                 @if($errors->has('lImage3_name'))
                     <p class="help-block">
                         {{ $errors->first('lImage3_name') }}
@@ -210,7 +257,7 @@
             <div class="form-group {{ $errors->has('lImage3_unit') ? 'has-error' : '' }}">
 
                 <label for="lImage3_unit">Leader Image 3 Unit</label>
-                <input type="text" id="lImage3_unit" name="lImage3_unit" class="form-control" value="{{ old('lImage3_unit', isset($realLeader) ? $realLeader->lImage3_unit : '') }}" >
+                <input type="text" id="lImage3_unit" name="lImage3_unit" class="form-control" value="{{ old('lImage3_unit', $realLeader->lImage3_unit ) }}" >
                 @if($errors->has('lImage3_unit'))
                     <p class="help-block">
                         {{ $errors->first('lImage3_unit') }}
@@ -220,11 +267,20 @@
                     {{ trans('cruds.menu.fields.name_helper') }}
                 </p>
             </div>
+            <div class="custom-file-control thumbnail"
+                 style="width: 600px; height: 250px;">
+                <img src="{{url('/images/'. $realLeader->lImage4 )}}"
+                     alt="Image"  width="600" height="250"/>
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="lImage4" class="custom-file-input" id="chooseFile7">
+                <label class="custom-file-label" for="chooseFile7">Select Image: </label>
+            </div>
 
             <div class="form-group {{ $errors->has('lImage4_name') ? 'has-error' : '' }}">
 
                 <label for="lImage4_name">Leader Image 4</label>
-                <input type="text" id="lImage4_name" name="lImage4_name" class="form-control" value="{{ old('lImage4_name', isset($realLeader) ? $realLeader->lImage4_name : '') }}" >
+                <input type="text" id="lImage4_name" name="lImage4_name" class="form-control" value="{{ old('lImage4_name', $realLeader->lImage4_name ) }}" >
                 @if($errors->has('lImage4_name'))
                     <p class="help-block">
                         {{ $errors->first('lImage4_name') }}
@@ -237,7 +293,7 @@
             <div class="form-group {{ $errors->has('lImage4_unit') ? 'has-error' : '' }}">
 
                 <label for="lImage4_unit">Leader Image 4 Unit</label>
-                <input type="text" id="lImage4_unit" name="lImage4_unit" class="form-control" value="{{ old('lImage4_unit', isset($realLeader) ? $realLeader->lImage4_unit : '') }}" >
+                <input type="text" id="lImage4_unit" name="lImage4_unit" class="form-control" value="{{ old('lImage4_unit', $realLeader->lImage4_unit ) }}" >
                 @if($errors->has('lImage4_unit'))
                     <p class="help-block">
                         {{ $errors->first('lImage4_unit') }}

@@ -35,8 +35,8 @@ class SliderController extends Controller
         $file = $request->file('location');
         $originalname =  time().'.'.$file->getClientOriginalName();
         $path = $file->storeAs('public/images/slides', $originalname);
-        $request->location->move(public_path('images'), $originalname);
-        $request->location = $path;
+        $request->location->move(public_path('images/slides'), $originalname);
+        $request->location = $originalname;
         $slider = Slider::create($request->all());
         $slider->location = $originalname;
         $slider->save();
@@ -49,18 +49,21 @@ class SliderController extends Controller
         return view('admin.sliders.edit', compact('slider'));
     }
 
-    public function update(UpdateSliderRequest $request, Slider $slider)
+    public function update(UpdateSliderRequest $request, $slider)
     {
+
+        $slider = Slider::find($slider);
 
         $file = $request->file('location');
 
         if($file != '') {
             $path = public_path() . '/images/slides/';
 
-            //code for remove old file
-            if ($slider->location != '' && $slider->location != null) {
-                $file_old = $path . $slider->location;
-                unlink($file_old);
+            if ($path . $slider->img1) {
+                if ($slider->location != '' && $slider->location != null) {
+                    $file_old = $path . $slider->location;
+                    unlink($file_old);
+                }
             }
 
             //upload new file
@@ -68,11 +71,16 @@ class SliderController extends Controller
 
             $path = $file->storeAs('public/images/slides', $originalname);
             $request->location->move(public_path('images/slides'), $originalname);
-            $request->location = $path;
+            $request->location = $originalname;
 
             $slider->update($request->all());
-            $slider->location = $originalname;
-            $slider->save();
+            $index = Slider::orderBy('id', 'DESC')->first();
+
+            if ($file != ''){
+                $index->location = $originalname;
+                $index->save();
+            }
+
         }
         return redirect()->route('admin.sliders.index');
     }

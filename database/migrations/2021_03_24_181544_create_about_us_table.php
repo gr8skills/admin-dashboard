@@ -17,7 +17,7 @@ class CreateAboutUsTable extends Migration
     {
         Schema::create('about_us', function (Blueprint $table) {
             $table->id();
-            $table->binary('img')->nullable();
+            $table->string('img1')->nullable();
             $table->string('main_title')->nullable();
             $table->string('sub_main_title')->nullable();
             $table->string('title')->nullable();

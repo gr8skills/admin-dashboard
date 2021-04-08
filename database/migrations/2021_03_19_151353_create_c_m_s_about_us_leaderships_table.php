@@ -17,6 +17,7 @@ class CreateCMSAboutUsLeadershipsTable extends Migration
     {
         Schema::create('c_m_s_about_us_leaderships', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('img1')->nullable();
             $table->string('title')->nullable();
             $table->longText('content')->nullable();
             $table->string('principal_image')->nullable();
@@ -42,7 +43,7 @@ Kind regards,
 
 AHMED KAMAL
 Principal (Boarding School)',
-                'principal_image'       => 'principal.png',
+                'principal_image'       => '',
                 'created_at' => DB::raw('CURRENT_TIMESTAMP'),
                 'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
 

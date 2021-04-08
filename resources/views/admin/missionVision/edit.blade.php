@@ -14,6 +14,16 @@
             @csrf
             @method('PUT')
             <h2 class="h2">OUR MISSION AND VISION</h2>
+            <div class="custom-file-control thumbnail"
+                 style="width: 750px; height: 260px;">
+                <img src="{{url('/images/'.$mission->main_img)}}"
+                     alt="Header Image" width="750" height="250" />
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="main_img" class="custom-file-input" id="chooseFile" value="{{ $mission->main_img }}">
+                <label class="custom-file-label" for="chooseFile">Select Image</label>
+            </div>
+
             <div class="form-group {{ $errors->has('title1') ? 'has-error' : '' }}">
 
                 <label for="title1">Title</label>
@@ -105,6 +115,15 @@
                     {{ trans('cruds.menu.fields.name_helper') }}
                 </p>
             </div>
+            <div class="custom-file-control thumbnail"
+                 style="width: 750px; height: 260px;">
+                <img src="{{url('/images/'.$mission->image1)}}"
+                     alt="Image" width="750" height="250" />
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="image1" class="custom-file-input" id="chooseFile1" value="{{ $mission->image1 }}">
+                <label class="custom-file-label" for="chooseFile1">Select  Image</label>
+            </div>
 
             <div class="form-group nopadding {{ $errors->has('image_content1') ? 'has-error' : '' }}">
                 <label for="image_content1">Image 1 Content</label>
@@ -131,6 +150,15 @@
                     {{ trans('cruds.menu.fields.name_helper') }}
                 </p>
             </div>
+            <div class="custom-file-control thumbnail"
+                 style="width: 750px; height: 260px;">
+                <img src="{{url('/images/'.$mission->image2)}}"
+                     alt="Image" width="750" height="250" />
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="image2" class="custom-file-input" id="chooseFile2" value="{{ $mission->image2 }}">
+                <label class="custom-file-label" for="chooseFile2">Select Image</label>
+            </div>
 
             <div class="form-group nopadding {{ $errors->has('image_content2') ? 'has-error' : '' }}">
                 <label for="image_content2">Image 2 Content</label>
@@ -156,6 +184,15 @@
                 <p class="helper-block">
                     {{ trans('cruds.menu.fields.name_helper') }}
                 </p>
+            </div>
+            <div class="custom-file-control thumbnail"
+                 style="width: 750px; height: 260px;">
+                <img src="{{url('/images/'.$mission->image3)}}"
+                     alt="Image" width="750" height="250" />
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="image3" class="custom-file-input" id="chooseFile3" value="{{ $mission->image3 }}">
+                <label class="custom-file-label" for="chooseFile3">Select Image</label>
             </div>
 
             <div class="form-group nopadding {{ $errors->has('image_content3') ? 'has-error' : '' }}">

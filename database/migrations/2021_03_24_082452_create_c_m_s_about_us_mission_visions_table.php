@@ -17,6 +17,7 @@ class CreateCMSAboutUsMissionVisionsTable extends Migration
     {
         Schema::create('c_m_s_about_us_mission_visions', function (Blueprint $table) {
             $table->id();
+            $table->string('main_img')->nullable();
             $table->string('title1')->nullable();
             $table->longText('content1')->nullable();
             $table->longText('mission')->nullable();
@@ -38,6 +39,7 @@ class CreateCMSAboutUsMissionVisionsTable extends Migration
         Model::unguard();
         $default = [
             'id' => 1,
+            'main_img' => '',
             'title1' => 'Alive and well at BMS is a shared desire for our great school to be an even greater one.',
             'content1' => 'From our volunteer board members, to our dedicated faculty, to our supportive parents, to our hard-working students, there is a sense of connection and community. We all work together to continually improve BMS--to make it the best that it can be.',
             'mission' => 'Providing opportunity for every child to access first class education that: 

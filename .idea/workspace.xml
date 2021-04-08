@@ -2,398 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="706072f5-83c9-4c26-bea6-8f85822d3a50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/InnovationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/StudentLifeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontEnd/FrontEndController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateInnovationRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateStudentLifeRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Admin/EMISResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Admin/ElementarySchoolResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Admin/HighSchoolResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Admin/InnovationResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Admin/LearningResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Admin/MainMenuResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Admin/MiddleSchoolResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Admin/PreSchoolResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Admin/SliderResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Admin/StudentLifeResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/StudentLife.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_26_094637_create_student_lives_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/bloom-clone.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/aaa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/aaa/activities.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/aaa/activities/elementary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/aaa/activities/high-school.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/aaa/activities/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/aaa/activities/middle-school.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/aaa/athletics-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/aaa/athletics.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/aaa/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/aaa/the-arts-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/aaa/the-arts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/directors-welcome-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/directors-welcome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/hm.baidu.com/hm7b997b99.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/img/d2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/leadership-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/leadership.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/news-publications.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/news-publications/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/news-publications/publications-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/news-publications/publications.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/our-campuses-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/our-campuses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/our-history-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/our-history.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/our-mission-and-vision-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/our-mission-and-vision.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/school-board.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/school-board/contact-the-board.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/about-us/school-board/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/apply-to-aisg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/apply-to-aisg/cny-holiday-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/apply-to-aisg/cny-holiday.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/apply-to-aisg/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/apply-to-aisg/required-documents.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/enquiry-form-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/enquiry-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/frequently-asked-questions-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/frequently-asked-questions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/grade-placement.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/tuition-and-fees-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/tuition-and-fees.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/visit-aisg-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/admissions/visit-aisg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/bloom/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/bloom/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/bloom/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/bloom/sidebar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/bloom/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/c.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/calendar-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/calendar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/careers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/careers/current-opportunities-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/careers/current-opportunities.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/careers/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/careers/why-choose-aisg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/careers/why-choose-aisg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/adminview07490749.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugin.min3dd93dd9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugin.min84fd84fd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugin.min8b368b36.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugin.min8b828b82.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugin.min99709970.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugin.mind81fd81f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugin.mineaaaeaaa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugin3dd93dd9.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugin84fd84fd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugin8b368b36.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugin8b828b82.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugin99709970.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugind81fd81f.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/scripts/formPlugineaaaeaaa.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/view22c022c0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/view3dda3dda.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/view733a733a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/view740f740f.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/view87138713.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/view99739973.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/viewce1f.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_forms/viewd0dad0da.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_scripts/scripts/cfform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/cf_scripts/scripts/masks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/_board/alumni-spotlight/post/blockchainer-fruzan-nijrabi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/_board/alumni-spotlight/post/child-development-researcher-frances-chang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/_board/alumni-spotlight/post/founder-director-of-9212-data-nina-schneider.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/alumni-spotlight.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/alumni-spotlight/_board/alumni-spotlight/post/blockchainer-fruzan-nijrabi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/alumni-spotlight/_board/alumni-spotlight/post/child-development-researcher-frances-chang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/alumni-spotlight/_board/alumni-spotlight/post/founder-director-of-9212-data-nina-schneider.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/frequently-asked-questions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/photo-gallery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/photo-gallery/35th-anniversary-brunch.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/photo-gallery/networking-night-2018.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/alumni/plan-your-visit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/giving-to-aisg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/giving-to-aisg/_board/speaker-series/post/carl-anderson.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/giving-to-aisg/_board/speaker-series/post/tongtong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/giving-to-aisg/_board/speaker-series/post/vincent-warren.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/giving-to-aisg/giving-pledge.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/giving-to-aisg/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/pta-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/pta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/community/statement-of-community.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/contact-us.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/contact-us/contact-admissions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/contact-us/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/data-protection-policy-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/data-protection-policy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ersha-island-map.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fast.fonts.net/t/1d45cd45c.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/featured-news.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/featured-news/_board/featured-news/post/a-community-of-giving.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/featured-news/_board/featured-news/post/aisgs-incredible-diversity.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/featured-news/_board/featured-news/post/senior-spotlight-jee-su-kim.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/featured-news/_board/featured-news/post/senior-spotlight-michael-liu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/featured-news/_board/featured-news/post/senior-spotlight-michelle-zhu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/featured-news/_board/featured-news/post/university-acceptances-2019.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/feedback-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/feedback.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/elements/2340/printd41dd41d.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/363.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/376.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/378-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/378.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/379.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/402.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/410.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/412.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/413.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/418.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/421.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/475.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/652.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/730.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/747.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/748.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/fs/pages/826.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/hm.baidu.com/hm7b997b99.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/img/c1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/language-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/language.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/admissions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/es.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/es/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/high-school-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/high-school.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/hm.baidu.com/hm7b997b99.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/learning.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/middle-school.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/middle-school/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/preschool.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/preschool/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/the-innovation-initiative-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/learning/the-innovation-initiative.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/login-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/p.typekit.net/p06b306b3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/platform-api.sharethis.com/js/sharethis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/quicklinks-link/calendar-link.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ramsnet-employee-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ramsnet-employee.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ramsnet-parent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ramsnet-parent/calendar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ramsnet-parent/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ramsnet-student-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ramsnet-student.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/recruit.hirebridge.com/v3/scripts/iframeResizer.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/science-park-map.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/search-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/fs_global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/iFrameResizer/iframeResizer.contentWindow.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/jquery-migrate-1.2.1.fs-modified.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/jquery-migrate-1.2.1.fs-modified90309030.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/jquery.ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/jquery.ui.min03d703d7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/plugins/autonumeric/autoNumeric.min03d703d7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/plugins/fsNumberBox/jquery.fsNumberBox.min03d703d7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/plugins/fsNumberSpinner/jquery.fsNumberSpinner.min03d703d7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/plugins/fsNumberSpinner/jquery.fsNumberSpinner03d703d7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/plugins/jquery.autoLoader03d703d7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/plugins/jquery.base6403d703d7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/plugins/jquery.finalsiteSumInputs.min03d703d7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/plugins/jquery.finalsiteValidator.min03d703d7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/plugins/jquery.json03d703d7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/plugins/jquery.scrollTo-1.4.2-min03d703d7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/plugins/jquery.uuid.min03d703d7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/plugins/validationEngine.jquery03d703d7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/images/ui-bg_glass_65_ffffff_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/images/ui-bg_glass_75_ffffff_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/images/ui-bg_inset-soft_95_fef1ec_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/images/ui-icons_222222_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/images/ui-icons_454545_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/images/ui-icons_888888_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/ui.accordion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/ui.all03d703d7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/ui.base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/ui.core.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/ui.datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/ui.dialog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/ui.progressbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/ui.resizable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/ui.slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/ui.tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/securejs.finalsite.com/190215/javascript/jQuery/themes/base/ui.theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/site-map-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/site-map.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/application-68cde192f24b45686fbde668b1e947d872fa64a7b0e1a566b96ea5699a3c4fe5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/application-77900acfe201cfa76bd4491aad6b102286acc086bdca1ab41c5ce47f3fdcea62.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/icons/global/arrow_right-0224601a9f9c7247b3d28edb4368b0dcafa686a26d9c9b68369f80b7b5e05f25.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/icons/global/clear_gray-a66176254d37a33c96f91741afbef087591dc71595cdaa37a6da4e33cde704f1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-bg_flat_0_3F454B_40x100.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-bg_flat_100_333_40x100.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-bg_flat_100_979CA2_40x100.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-bg_flat_100_D5D8DC_40x100.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-bg_flat_100_c4c9cf_40x100.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-bg_flat_100_e6e8eb_40x100.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-bg_flat_100_ffffff_40x100.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-bg_flat_55_b94a48_40x100.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-bg_flat_55_eeeeee_40x100.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-icons_149bc7_256x240.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-icons_3383bb_256x240.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-icons_454545_256x240.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-icons_70b2e1_256x240.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-icons_999999_256x240.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/images/ui-icons_ffffff_256x240.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/in_layout_head-49a75163b68835cb4e0be81700e5027338e69a26cfafb834887c08dd9fb22057.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/static.finalsite.net/assets/print-f25ec9a5ab3748e8fa5971785635970ffa9a0f840c2ee1f993bb9d0efc0d512f.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/child-protection-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/child-protection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/college-counseling-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/college-counseling.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/community-service-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/community-service.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/data-protection-policy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/hm.baidu.com/hm7b997b99.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/student-counseling-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/student-counseling.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/student-life/student-life/child-protection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/styles92eb.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/styles92eb92eb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/photos/default/aisgfavicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/photos/default/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_16/images/ios_logo_114.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_16/images/ios_logo_57.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_16/images/ios_logo_72.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/01f463dc-dba9-419f-9c9f-80ac2ee9f427.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/0811514e-6660-4043-92c1-23d0b8caaa2f.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/087d8a95-3f25-4bae-a1d1-db9ddffd72f5.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/141c0322-57c4-48ca-abb4-31688d659f7d.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/29f3ff8a-1719-4e25-a757-53ee1a1114a5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/5dae3a6e-9b07-4c2f-aed2-1f5b8951261b.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/7def0e34-f28d-434f-b2ec-472bde847115.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/81e3653a-53bd-49d9-a1f8-f924811b6f02.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/83c94878-06c8-442c-a7df-d520b0ced00b.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/8c92eb68-ce37-4962-a9f4-5b47d336bd1c.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/9bdfdcac-bbd4-46a9-9280-056c9a4438a2.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/ab1bcdf7-9570-4cba-a8e3-3e39ddd861db.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/aeae8cac-ba4d-40d2-bbcf-936f2c7dcfe6.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/ba125970-2d75-413e-a466-324153755f20.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/caedf2e6-fbef-4928-b08e-1f975981ae8d.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/eae74276-dd78-47e4-9b27-dac81c3411ca.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/eb06b4c3-c0fd-4cd0-a9d9-a2954f6839a7.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/f5a95cb0-6d5b-4eb4-b6a3-a529d5ccde25.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/f8bbb037-530d-4e04-a651-4134f7031164.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/fe232554-5489-4874-bb45-bd966c8c5932.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/icomoon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/icomoon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/icomoon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/icomoon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/fonts/icomoon.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/bg-shape-row-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/bg-shape_1-bg_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/bg-shape_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/bg-shape_2-bg_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/bg-shape_2-bottom-bg_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/bg-shape_2-bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/bg-shape_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/bg-shape_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/down_arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/icons/american-flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/icons/chinese-flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/icons/link.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/icons/quote.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/images/skyline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/maincd06.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/maincd06.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/maincd06cd06.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/uploaded/themes/default_18/maincd06cd06.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/use.typekit.net/aem6phf.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/use.typekit.net/af/2f0e6a/00000000000000003b9b12e6/27/ae196e196.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/use.typekit.net/af/2f0e6a/00000000000000003b9b12e6/27/de196e196.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/use.typekit.net/af/2f0e6a/00000000000000003b9b12e6/27/le196e196.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/wechat-qr-code-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/wechat-qr-code.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1616764609.b5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1616764828.logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1616764828.principal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1616765486.logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/innovation/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/studentlife/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/about-us.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/about-us.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AboutUsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AboutUsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdmissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdmissionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSAboutUsLeadershipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSAboutUsLeadershipController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSIndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSIndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SiteSettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SiteSettingsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InnovationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Innovation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Innovation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_12_092436_create_site_settings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_12_092436_create_site_settings_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_12_180612_create_main_menus_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_12_180612_create_main_menus_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_19_114453_create_c_m_s_indices_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_19_114453_create_c_m_s_indices_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_23_090159_create_c_m_s_about_us_histories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_23_090159_create_c_m_s_about_us_histories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSAboutUsMissionVisionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSAboutUsMissionVisionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSAboutUsRealLeadershipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSAboutUsRealLeadershipController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/LearningController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LearningController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SliderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_19_151353_create_c_m_s_about_us_leaderships_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_19_151353_create_c_m_s_about_us_leaderships_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_24_082452_create_c_m_s_about_us_mission_visions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_24_082452_create_c_m_s_about_us_mission_visions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_24_094634_create_c_m_s_about_us_real_leaderships_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_24_094634_create_c_m_s_about_us_real_leaderships_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_24_152928_create_admissions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_24_152928_create_admissions_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_24_181544_create_about_us_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_24_181544_create_about_us_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_25_202942_create_high_schools_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_25_202942_create_high_schools_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_26_082556_create_innovations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_26_082556_create_innovations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/PermissionsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PermissionsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/editor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1616592491.IMG-20210305-WA0060.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1616592491.IMG-20210305-WA0060.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1616592520.logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1616592520.logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1616593528.principal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1616593528.principal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1616593549.principal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1616593549.principal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1616593685.principal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1616593685.principal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1616595373.principal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1616595373.principal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/b5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/b5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slides/1616589730.Screenshot from 2021-02-08 23-34-28.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slides/1616589730.Screenshot from 2021-02-08 23-34-28.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/tutorcage_logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/tutorcage_logo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tinymce.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tinymce.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616149850.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616150347.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616172990.logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616173001.down_arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616509021.logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616509075.logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616593528.principal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616593549.principal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616593685.principal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616595373.principal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616769649.logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616769695.logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616769816.logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1616769876.logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1617026305.c1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1617026305.c1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1617098263.sp-library.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1617098263.sp-library.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1617098645.b5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1617098645.b5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1617114009.b2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1617114009.b2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1617114009.b5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1617114009.b5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1617115041.AISG-InspiringBrightFutures-2-720p.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1617115041.AISG-InspiringBrightFutures-2-720p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/principal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/principal.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slides/1616589730.Screenshot from 2021-02-08 23-34-28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slides/1617104503.b2.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/aboutus/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/aboutus/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/indexCMS/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/indexCMS/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admission/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admission/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/leadershipCMS/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/leadershipCMS/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/menus/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/menus/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/missionVision/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/missionVision/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/realLeadership/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/realLeadership/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/sliders/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sliders/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/sliders/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sliders/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/sliders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sliders/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/sliders/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sliders/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -547,21 +201,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../charlesdale" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images/slides" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/FrontEnd" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Api/V1/Admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/frontend" />
       <recent name="$PROJECT_DIR$/app/Http/Resources/Admin" />
       <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/app/Http/Requests" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/FrontEnd" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Api/V1/Admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -605,7 +260,9 @@
       <workItem from="1616518888057" duration="573000" />
       <workItem from="1616571418477" duration="88977000" />
       <workItem from="1617091897534" duration="6828000" />
-      <workItem from="1617194057314" duration="2437000" />
+      <workItem from="1617194057314" duration="14494000" />
+      <workItem from="1617298084181" duration="2002000" />
+      <workItem from="1617827020147" duration="28014000" />
     </task>
     <servers />
   </component>
@@ -621,14 +278,14 @@
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
     <state x="667" y="28" width="566" height="1014" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.28.1920.1014@0.28.1920.1014" timestamp="1615545978364" />
-    <state x="693" y="293" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616754892785">
+    <state x="693" y="293" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617843315301">
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
-    <state x="693" y="293" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.28.1920.1014@0.28.1920.1014" timestamp="1616754892785" />
-    <state x="739" y="293" key="FileChooserDialogImpl" timestamp="1617107777830">
+    <state x="693" y="293" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.28.1920.1014@0.28.1920.1014" timestamp="1617843315301" />
+    <state x="739" y="293" key="FileChooserDialogImpl" timestamp="1617275212694">
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
-    <state x="739" y="293" key="FileChooserDialogImpl/0.28.1920.1014@0.28.1920.1014" timestamp="1617107777830" />
+    <state x="739" y="293" key="FileChooserDialogImpl/0.28.1920.1014@0.28.1920.1014" timestamp="1617275212694" />
     <state x="510" y="345" width="890" height="380" key="NewPhpClassDialog" timestamp="1617028510949">
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
@@ -637,18 +294,18 @@
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
     <state x="426" y="170" key="SettingsEditor/0.28.1920.1014@0.28.1920.1014" timestamp="1617102223311" />
-    <state width="648" height="446" key="SwitcherDM" timestamp="1617030097493">
+    <state width="648" height="446" key="SwitcherDM" timestamp="1617222993757">
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
-    <state width="648" height="446" key="SwitcherDM/0.28.1920.1014@0.28.1920.1014" timestamp="1617030097493" />
+    <state width="648" height="446" key="SwitcherDM/0.28.1920.1014@0.28.1920.1014" timestamp="1617222993757" />
     <state x="596" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1616402716911">
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
     <state x="596" y="362" key="com.intellij.ide.util.TipDialog/0.28.1920.1014@0.28.1920.1014" timestamp="1616402716911" />
-    <state x="624" y="177" width="662" height="715" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1617030900958">
+    <state x="624" y="177" width="662" height="715" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1617917366453">
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
-    <state x="624" y="177" width="662" height="715" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.28.1920.1014@0.28.1920.1014" timestamp="1617030900958" />
+    <state x="624" y="177" width="662" height="715" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.28.1920.1014@0.28.1920.1014" timestamp="1617917366453" />
     <state x="573" y="266" width="796" height="560" key="find.popup" timestamp="1616508549327">
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
@@ -657,10 +314,10 @@
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
     <state x="621" y="250" width="675" height="678" key="search.everywhere.popup/0.28.1920.1014@0.28.1920.1014" timestamp="1616681660174" />
-    <state x="685" y="449" width="544" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1616766852481">
+    <state x="685" y="449" width="544" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1617913211306">
       <screen x="0" y="28" width="1920" height="1014" />
     </state>
-    <state x="685" y="449" width="544" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.28.1920.1014@0.28.1920.1014" timestamp="1616766852481" />
+    <state x="685" y="449" width="544" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.28.1920.1014@0.28.1920.1014" timestamp="1617913211306" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

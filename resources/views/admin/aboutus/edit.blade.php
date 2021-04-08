@@ -14,6 +14,15 @@
             @csrf
             @method('PUT')
             <h2 class="h2">A FUTURE-READY LEARNING COMMUNITY</h2>
+            <div class="custom-file-control thumbnail form-group"
+                 style="width: 400px; height: 300px; background-color: grey">
+                <img src="{{url('images/'.$about->img1)}}"
+                     alt="Header Image" width="550" height="300" class="" />
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="img1" class="custom-file-input form-control" id="chooseFile1">
+                <label class="custom-file-label" for="chooseFile1">Select Image: </label>
+            </div>
             <div class="form-group {{ $errors->has('main_title') ? 'has-error' : '' }}">
                 <label for="main_title">Main Title</label>
                 <input type="text" id="main_title" name="main_title" class="form-control" value="{{ old('main_title', isset($about) ? $about->main_title : '') }}" >
@@ -40,15 +49,15 @@
                 </p>
             </div>
 
-            <div class="custom-file-control thumbnail"
-                 style="width: 210px; height: 460px;">
-                <img src="{{"data:image/" .$about->imageType. ";base64," .base64_encode( $about->img )}}"
-                     alt="Image 1" height="200" width="450"/>
-            </div>
-            <div class="custom-file form-group">
-                <input type="file" name="img" class="custom-file-input" id="chooseFile">
-                <label class="custom-file-label" for="chooseFile">Select Image: </label>
-            </div>
+{{--            <div class="custom-file-control thumbnail"--}}
+{{--                 style="width: 210px; height: 460px;">--}}
+{{--                <img src="{{"data:image/" .$about->imageType. ";base64," .base64_encode( $about->img )}}"--}}
+{{--                     alt="Image 1" height="200" width="450"/>--}}
+{{--            </div>--}}
+{{--            <div class="custom-file form-group">--}}
+{{--                <input type="file" name="img" class="custom-file-input" id="chooseFile">--}}
+{{--                <label class="custom-file-label" for="chooseFile">Select Image: </label>--}}
+{{--            </div>--}}
 
             <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
                 <label for="title">Title</label>

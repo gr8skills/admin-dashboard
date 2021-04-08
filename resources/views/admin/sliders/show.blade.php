@@ -36,14 +36,14 @@
                             {{ $slider->alt }}
                         </td>
                     </tr>
-                    <tr>
-                        <th>
-                            {{ trans('cruds.slider.fields.data_resource_uuid') }}
-                        </th>
-                        <td>
-                            {{ $slider->data_resource_uuid }}
-                        </td>
-                    </tr>
+{{--                    <tr>--}}
+{{--                        <th>--}}
+{{--                            {{ trans('cruds.slider.fields.data_resource_uuid') }}--}}
+{{--                        </th>--}}
+{{--                        <td>--}}
+{{--                            {{ $slider->data_resource_uuid }}--}}
+{{--                        </td>--}}
+{{--                    </tr>--}}
                     <tr>
                         <th>
                             {{ trans('cruds.slider.fields.position') }}

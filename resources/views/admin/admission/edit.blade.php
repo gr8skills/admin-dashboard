@@ -14,6 +14,15 @@
             @csrf
             @method('PUT')
             <h2 class="h2">BMS ADMISSIONS</h2>
+            <div class="custom-file-control thumbnail"
+                 style="width: 600px; height: 250px;">
+                <img src="{{url('/images/'.$admission->main_img)}}"
+                     alt="Image 1" width="600" height="250"/>
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="main_img" class="custom-file-input" id="chooseFile1">
+                <label class="custom-file-label" for="chooseFile1">Select Header Image</label>
+            </div>
             <div class="form-group {{ $errors->has('title1') ? 'has-error' : '' }}">
                 <label for="title1">Title</label>
                 <input type="text" id="title1" name="title1" class="form-control" value="{{ old('title1', isset($admission) ? $admission->title1 : '') }}" required>

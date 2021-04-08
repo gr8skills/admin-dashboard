@@ -17,6 +17,7 @@ class CreateCMSAboutUsRealLeadershipsTable extends Migration
     {
         Schema::create('c_m_s_about_us_real_leaderships', function (Blueprint $table) {
             $table->id();
+            $table->string('main_image')->nullable();
             $table->string('title1')->nullable();
             $table->string('image1')->nullable();
             $table->string('image1_name')->nullable();
