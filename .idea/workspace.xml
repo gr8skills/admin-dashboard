@@ -2,104 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="706072f5-83c9-4c26-bea6-8f85822d3a50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/ChildProtection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ChildProtectionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateChildProtectionRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Admin/ChildProtectionResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_09_111924_create_child_protections_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617920940.b5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617920940.c5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617920940.e1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617921133.c1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617921133.c3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617921390.b8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617924898.IMG_4255.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617924898.c10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617924898.e1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617924951.IMG_4255.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617924951.c10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617924951.e1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617928682.c10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617928682.e2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617928682.e4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617930369.e7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617930369.e8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617930369.e9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617930698.e10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617962540.c6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617962540.c8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617962540.sp-library.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617962816.c2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617964232.b4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617964232.b9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617965112.b4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617965112.e11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617965360.b4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617965360.e11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617965489.b4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617965489.e11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617966919.b8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617966919.c10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617966919.d7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617966919.f1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617971812.f1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617972476.SY1718_ARTWORK_ELEMENTARY1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1617972612.ESCourtyard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1618219636.c8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1618219674.b4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1618220942.c3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1618220964.b3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1618222080.e2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1618222080.e3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1618223238.the-aisg-difference-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slides/1618219388.e9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/childprotection/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdmissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdmissionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSAboutUsHistoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSAboutUsHistoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSAboutUsLeadershipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSAboutUsLeadershipController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSIndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CMSIndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/EMISController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/EMISController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ElementarySchoolController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ElementarySchoolController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HighSchoolController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HighSchoolController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/InnovationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/InnovationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/LearningController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LearningController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainMenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainMenuController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MiddleSchoolController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MiddleSchoolController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PreSchoolController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PreSchoolController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SiteSettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SiteSettingsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SliderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/StudentLifeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/StudentLifeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Learning.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Learning.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/StudentLife.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/StudentLife.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_25_122042_create_pre_schools_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_25_122042_create_pre_schools_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_25_145324_create_elementary_schools_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_25_145324_create_elementary_schools_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_25_152753_create_middle_schools_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_25_152753_create_middle_schools_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_25_202942_create_high_schools_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_25_202942_create_high_schools_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_26_082556_create_innovations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_26_082556_create_innovations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_26_094637_create_student_lives_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_26_094637_create_student_lives_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1617835164.hero-about-us.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1618220019.hero-about-us.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1617897619.b10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1617897619.b10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1617913539.d4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1617913539.d4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1617916344.use.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1617916344.use.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1617918260.b5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1617918260.b5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1617918260.c10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1617918260.c10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/c10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/c10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/principal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/1618220837.principal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/elementaryschool/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/elementaryschool/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/highschool/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/highschool/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/innovation/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/innovation/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/learning/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/learning/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/middleschool/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/middleschool/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/preschool/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/preschool/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/sliders/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sliders/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/studentlife/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/studentlife/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/menus/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/menus/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/permissions/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/permissions/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/roles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/roles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/sliders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sliders/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +222,7 @@
       <workItem from="1617091897534" duration="6828000" />
       <workItem from="1617194057314" duration="14494000" />
       <workItem from="1617298084181" duration="2002000" />
-      <workItem from="1617827020147" duration="55411000" />
+      <workItem from="1617827020147" duration="57502000" />
     </task>
     <servers />
   </component>
