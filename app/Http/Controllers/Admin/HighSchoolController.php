@@ -18,53 +18,79 @@ class HighSchoolController extends Controller
         return view('admin.highschool.edit', compact('highschool'));
     }
 
-    public function update(UpdateHighSchoolRequest $request, HighSchool $highSchool)
+    public function update(UpdateHighSchoolRequest $request, $highSchool)
     {
+
+        $highSchool = HighSchool::find($highSchool);
 
         abort_if(Gate::denies('content_management_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         $file1 = $request->file('pic1');
         $file2 = $request->file('pic2');
         $file3 = $request->file('pic3');
+        $file4 = $request->file('main_img');
 
 
         if ($file1 != ''){
-            $path = public_path() . '/images';
+            $path = public_path() . '/images/';
 
-            if ($highSchool->pic1 != '' && $highSchool->pic1 != null){
-                $file_old1 = $path.$highSchool->pic1;
-                unlink($file_old1);
+            if ($path.$highSchool->main_img){
+                if ($highSchool->pic1 != '' && $highSchool->pic1 != null){
+                    $file_old1 = $path.$highSchool->pic1;
+                    unlink($file_old1);
+                }
             }
+
             $pic1 = time().'.'. $file1->getClientOriginalName();
             $path = $file1->storeAs('public/images', $pic1);
             $request->pic1->move(public_path('images'), $pic1);
-            $request->pic1 = $path;
+            $request->pic1 = $pic1;
         }
         if ($file2 != ''){
-            $path = public_path() . '/images';
+            $path = public_path() . '/images/';
 
-            if ($highSchool->pic2 != '' && $highSchool->pic2 != null){
-                $file_old2 = $path.$highSchool->pic2;
-                unlink($file_old2);
+            if ($path.$highSchool->pic2){
+                if ($highSchool->pic2 != '' && $highSchool->pic2 != null){
+                    $file_old2 = $path.$highSchool->pic2;
+                    unlink($file_old2);
+                }
             }
+
             $pic2 = time().'.'. $file2->getClientOriginalName();
             $path = $file2->storeAs('public/images', $pic2);
             $request->pic2->move(public_path('images'), $pic2);
-            $request->pic2 = $path;
+            $request->pic2 = $pic2;
         }
         if ($file3 != ''){
-            $path = public_path() . '/images';
+            $path = public_path() . '/images/';
 
-            if ($highSchool->pic3 != '' && $highSchool->pic3 != null){
-                $file_old3 = $path.$highSchool->pic3;
-                unlink($file_old3);
+            if ($path.$highSchool->pic3){
+                if ($highSchool->pic3 != '' && $highSchool->pic3 != null){
+                    $file_old3 = $path.$highSchool->pic3;
+                    unlink($file_old3);
+                }
             }
+
             $pic3 = time().'.'. $file3->getClientOriginalName();
             $path = $file3->storeAs('public/images', $pic3);
             $request->pic3->move(public_path('images'), $pic3);
-            $request->pic3 = $path;
+            $request->pic3 = $pic3;
         }
+        if ($file4 != ''){
+            $path = public_path() . '/images/';
 
+            if ($path.$highSchool->main_img){
+                if ($highSchool->main_img != '' && $highSchool->main_img != null){
+                    $file_old4 = $path.$highSchool->main_img;
+                    unlink($file_old4);
+                }
+            }
+
+            $pic4 = time().'.'. $file4->getClientOriginalName();
+            $path = $file4->storeAs('public/images', $pic4);
+            $request->main_img->move(public_path('images'), $pic4);
+            $request->main_img = $pic4;
+        }
 
         $highSchool->update($request->all());
 
@@ -79,6 +105,10 @@ class HighSchoolController extends Controller
         }
         if ($file3 != '') {
             $index->pic3 = $pic3;
+            $index->save();
+        }
+        if ($file4 != '') {
+            $index->main_img = $pic4;
             $index->save();
         }
 

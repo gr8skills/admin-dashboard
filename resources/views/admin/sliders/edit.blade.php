@@ -145,7 +145,7 @@
             <hr>
 
             <div class="form-group {{ $errors->has('type') ? 'has-error' : '' }}">
-                <label for="type">{{ trans('cruds.slider.fields.type') }}*</label>
+                <label for="type">{{ trans('cruds.slider.fields.type') }}* </label>
                 <select name="type" id="roles" class="form-control select2">
                     <option value="0" {{$slider->type==0 ? 'selected' : ''}}>Hide</option>
                     <option value="1" {{$slider->type==1 ? 'selected' : ''}}>Show</option>

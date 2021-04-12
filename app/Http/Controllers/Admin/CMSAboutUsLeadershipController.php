@@ -67,6 +67,7 @@ class CMSAboutUsLeadershipController extends Controller
 
     public function update(UpdateAboutUsLeadershipRequest $request, $cMSAboutUsLeadership)
     {
+
         abort_if(Gate::denies('content_management_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
         $principalWelcome = CMSAboutUsLeadership::find($cMSAboutUsLeadership);
 

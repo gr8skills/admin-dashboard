@@ -20,12 +20,12 @@ class CMSIndexController extends Controller
         return view('admin.indexCMS.edit', compact('indexPage'));
     }
 
-    public function update(UpdateIndexPageRequest $request, CMSIndex $CMSIndex)
+    public function update(UpdateIndexPageRequest $request, $CMSIndex)
     {
 
         abort_if(Gate::denies('content_management_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-
+        $CMSIndex = CMSIndex::find($CMSIndex);
 
         $row1_picture = $request->file('row1_picture');
         $row2_picture1 = $request->file('row2_pic1');

@@ -19,8 +19,9 @@ class AdmissionController extends Controller
 
     }
 
-    public function update(UpdateAdmissionRequest $request, Admission $admission)
+    public function update(UpdateAdmissionRequest $request,  $admission)
     {
+        $admission = Admission::find($admission);
         abort_if(Gate::denies('content_management_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         $file1 = $request->file('image1');
@@ -84,7 +85,9 @@ class AdmissionController extends Controller
             }
 
 
+
         }
+        $admission->update($request->all());
         return redirect()->route('admin.admission.index');
 
     }

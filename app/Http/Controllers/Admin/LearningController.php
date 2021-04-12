@@ -18,9 +18,9 @@ class LearningController extends Controller
         return view('admin.learning.edit', compact('learning'));
     }
 
-    public function update(UpdateLearningRequest $request, Learning $learning)
+    public function update(UpdateLearningRequest $request, $learning)
     {
-        dd($learning->pic1);
+        $learning = Learning::find($learning);
 
         abort_if(Gate::denies('content_management_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
@@ -31,6 +31,7 @@ class LearningController extends Controller
         $file4 = $request->file('pic4');
         $file5 = $request->file('pic5');
         $file6 = $request->file('pic6');
+        $file7 = $request->file('pic7');
 
         if ($file != ''){
             $path = public_path() . '/images/';
@@ -137,10 +138,29 @@ class LearningController extends Controller
             $request->pic6->move(public_path('images'), $pic6);
             $request->pic6 = $pic6;
         }
+        if ($file7 != ''){
+            $path = public_path() . '/images/';
+
+            if ($path.$learning->pic7){
+                if ($learning->pic7 != '' && $learning->pic7 != null){
+                    $file_old7 = $path.$learning->pic7;
+                    unlink($file_old7);
+                }
+            }
+
+            $pic7 = time().'.'. $file7->getClientOriginalName();
+            $path = $file7->storeAs('public/images', $pic7);
+            $request->pic7->move(public_path('images'), $pic7);
+            $request->pic7 = $pic7;
+        }
 
         $learning->update($request->all());
 
         $index = Learning::orderBy('id', 'DESC')->first();
+        if ($file != ''){
+            $index->pic = $pic;
+            $index->save();
+        }
         if ($file1 != ''){
             $index->pic1 = $pic1;
             $index->save();
@@ -163,6 +183,10 @@ class LearningController extends Controller
         }
         if ($file6!= ''){
             $index->pic6 = $pic6;
+            $index->save();
+        }
+        if ($file7!= ''){
+            $index->pic7 = $pic7;
             $index->save();
         }
 

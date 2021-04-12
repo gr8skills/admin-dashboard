@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Learning extends Model
 {
     use HasFactory;
+
+    protected $table = 'learnings';
+
+    protected $guarded = [
+        'id',
+    ];
 }

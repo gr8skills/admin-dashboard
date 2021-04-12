@@ -265,10 +265,20 @@
                                             <i class="fa-fw fas fa-user-shield">
 
                                             </i>
-                                            <span>STUDENT LIFE</span>
+                                            <span>Student Life</span>
                                         </a>
                                     </li>
                             @endcan
+                            @can('content_management_access')
+                                    <li class="nav-item">
+                                        <a href="{{ route("admin.childprotection.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
+                                            <i class="fas fa-user-shield">
+
+                                            </i>
+                                            <span>Child Protection</span>
+                                        </a>
+                                    </li>
+                                @endcan
                             @can('content_management_access')
                                 <li class="nav-item">
                                         <a href="{{ route("admin.emis.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">

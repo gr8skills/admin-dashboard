@@ -17,6 +17,7 @@ class CreateStudentLivesTable extends Migration
     {
         Schema::create('student_lives', function (Blueprint $table) {
             $table->id();
+            $table->string('main_img')->nullable();
             $table->string('title1')->nullable();
             $table->longText('bolded')->nullable();
             $table->longText('content1')->nullable();

@@ -14,6 +14,15 @@
             @csrf
             @method('PUT')
             <h2 class="h2">THE BMS DIFFERENCE</h2>
+            <div class="custom-file-control thumbnail"
+                 style="width: 600px; height: 250px;">
+                <img src="{{url('/images/'.$learning->pic)}}"
+                     alt="Picture" width="600" height="250"/>
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="pic" class="custom-file-input" id="chooseFileMain">
+                <label class="custom-file-label" for="chooseFileMain">Select file</label>
+            </div>
             <div class="form-group {{ $errors->has('main_title') ? 'has-error' : '' }}">
                 <label for="main_title">Main Title</label>
                 <input type="text" id="main_title" name="main_title" class="form-control" value="{{ old('main_title', isset($learning) ? $learning->main_title : '') }}" >

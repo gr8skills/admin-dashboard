@@ -44,8 +44,9 @@ class MainMenuController extends Controller
         return view('admin.menus.edit', compact('menu'));
     }
 
-    public function update(UpdateMainMenuRequest $request, MainMenu $mainMenu)
+    public function update(UpdateMainMenuRequest $request, $mainMenu)
     {
+        $mainMenu = MainMenu::find($mainMenu);
         $mainMenu->update($request->all());
         return redirect()->route('admin.main-menu.index');
     }

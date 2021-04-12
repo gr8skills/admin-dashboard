@@ -3,6 +3,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\AboutUs;
 use App\CMSAboutUsHistory;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UpdateAboutUsHistoryRequest;
@@ -20,11 +21,12 @@ class CMSAboutUsHistoryController extends Controller
         return view('admin.historyEdit.edit', compact('history'));
     }
 
-    public function update(UpdateAboutUsHistoryRequest $request, CMSAboutUsHistory $CMSAboutUsHistory)
+    public function update(UpdateAboutUsHistoryRequest $request,  $CMSAboutUsHistory)
     {
+        $CMSAboutUsHistory = AboutUs::find($CMSAboutUsHistory);
         abort_if(Gate::denies('content_management_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $history = CMSAboutUsHistory::update($request->all());
+        $CMSAboutUsHistory->update($request->all());
         return redirect()->route('admin.about-us-history.index');
     }
 }

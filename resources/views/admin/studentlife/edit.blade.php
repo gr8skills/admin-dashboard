@@ -13,7 +13,17 @@
         <form action="{{ route("admin.studentlife.update", [$studentLife->id]) }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
-            <h2 class="h2">CULTIVATING CHARACTER AND BALANCE</h2>
+            <h2 class="h2">CULTIVATING CHARACTER AND BALANCE</h2><br>
+            <div class="custom-file-control thumbnail"
+                 style="width: 600px; height: 250px;">
+                <img src="{{url('/images/'.$studentLife->main_img)}}"
+                     alt="Header Picture" width="600" height="250"/>
+            </div>
+            <div class="custom-file form-group">
+                <input type="file" name="main_img" class="custom-file-input" id="chooseFileMain">
+                <label class="custom-file-label" for="chooseFileMain">Select file</label>
+            </div>
+
             <div class="form-group {{ $errors->has('title1') ? 'has-error' : '' }}">
                 <label for="title1">Title 1</label>
                 <input type="text" id="title1" name="title1" class="form-control" value="{{ old('title1', isset($studentLife) ? $studentLife->title1 : '') }}" >

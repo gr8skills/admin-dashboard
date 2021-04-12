@@ -81,6 +81,8 @@ class SliderController extends Controller
                 $index->save();
             }
 
+        }else{
+            $slider->update($request->all());
         }
         return redirect()->route('admin.sliders.index');
     }

@@ -17,6 +17,7 @@ class CreateMiddleSchoolsTable extends Migration
     {
         Schema::create('middle_schools', function (Blueprint $table) {
             $table->id();
+            $table->string('main_img')->nullable();
             $table->string('title1')->nullable();
             $table->longText('bolded')->nullable();
             $table->longText('content1')->nullable();

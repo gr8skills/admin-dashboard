@@ -12,6 +12,7 @@ class StudentLife extends Model
     protected $dates = [
 
     ];
+    protected $guarded = ['id'];
 
     protected $table = 'student_lives';
 

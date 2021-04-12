@@ -17,6 +17,7 @@ class CreateInnovationsTable extends Migration
     {
         Schema::create('innovations', function (Blueprint $table) {
             $table->id();
+            $table->string('main_img')->nullable();
             $table->string('title1')->nullable();
             $table->longText('bolded')->nullable();
             $table->longText('content1')->nullable();

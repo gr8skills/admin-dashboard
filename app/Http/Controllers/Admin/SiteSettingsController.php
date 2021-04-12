@@ -37,11 +37,7 @@ class SiteSettingsController extends Controller
 
     public function store(StoreSettingsRequest $request)
     {
-        /*
-          $imageName = time().'.'.$request->school_logo->originalName().$request->school_logo->extension();
-          $request->school_logo->move(public_path('images'), $imageName);
-          $request->school_logo = $imageName;
-        */
+
         $file = $request->file('school_logo');
         if($file != '') {
             $path = public_path() . '/images';
@@ -56,7 +52,8 @@ class SiteSettingsController extends Controller
 //            }
 
             //upload new file
-            $originalname =  time().'.'.$file->getClientOriginalName();
+//            $originalname =  time().'.'.$file->getClientOriginalName();
+            $originalname =  'logo.png';
 
             $path = $file->storeAs('public/images', $originalname);
             $request->school_logo->move(public_path('images'), $originalname);
@@ -91,8 +88,10 @@ class SiteSettingsController extends Controller
     }
 
 
-    public function update(UpdateSettingsRequest $request, SiteSettings $siteSettings)
+    public function update(UpdateSettingsRequest $request,  $siteSettings)
     {
+
+        $siteSettings = SiteSettings::find($siteSettings);
         abort_if(Gate::denies('settings_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         $file = $request->file('school_logo');
@@ -107,7 +106,8 @@ class SiteSettingsController extends Controller
             }
 
             //upload new file
-            $originalname =  time().'.'.$file->getClientOriginalName();
+//            $originalname =  time().'.'.$file->getClientOriginalName();
+            $originalname =  'logo.png';
 
             $path = $file->storeAs('public/images', $originalname);
             $request->school_logo->move(public_path('images'), $originalname);
@@ -123,6 +123,9 @@ class SiteSettingsController extends Controller
 
             $siteSettings->school_logo = $originalname;
             $siteSettings->save();
+        }else{
+
+            $siteSettings->update($request->all());
         }
 
         return redirect()->route('admin.sitesettings.index');

@@ -19,8 +19,9 @@ class EMISController extends Controller
         return view('admin.emis.edit', compact('emis'));
     }
 
-    public function update(UpdateEmisRequest $request, EMIS $EMIS)
+    public function update(UpdateEmisRequest $request, $EMIS)
     {
+        $EMIS = EMIS::find($EMIS);
 
         abort_if(Gate::denies('content_management_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
