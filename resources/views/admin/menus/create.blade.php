@@ -61,7 +61,7 @@
             </div>
             <div class="form-group {{ $errors->has('visibility') ? 'has-error' : '' }}">
                 <label for="roles">{{ trans('cruds.menu.fields.visibility') }}*</label>
-                <select name="roles[]" id="roles" class="form-control select2">
+                <select name="visibility" id="roles" class="form-control select2">
                     <option value="0" {{$menu->visibility==0 ? 'selected' : ''}}>Hide</option>
                     <option value="1" {{$menu->visibility==1 ? 'selected' : ''}}>Show</option>
                 </select>

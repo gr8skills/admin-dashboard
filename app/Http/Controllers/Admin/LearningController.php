@@ -36,7 +36,7 @@ class LearningController extends Controller
         if ($file != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$learning->pic){
+            if (file_exists($path.$learning->pic)){
                 if ($learning->pic != '' && $learning->pic != null){
                     $file_old = $path.$learning->pic;
                     unlink($file_old);
@@ -51,7 +51,7 @@ class LearningController extends Controller
         if ($file1 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$learning->pic1){
+            if (file_exists($path.$learning->pic1)){
                 if ($learning->pic1 != '' && $learning->pic1 != null){
                     $file_old1 = $path.$learning->pic1;
                     unlink($file_old1);
@@ -66,7 +66,7 @@ class LearningController extends Controller
         if ($file2 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$learning->pic2){
+            if (file_exists($path.$learning->pic2)){
                 if ($learning->pic2 != '' && $learning->pic2 != null){
                     $file_old2 = $path.$learning->pic2;
                     unlink($file_old2);
@@ -81,7 +81,7 @@ class LearningController extends Controller
         if ($file3 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$learning->pic3){
+            if (file_exists($path.$learning->pic3)){
                 if ($learning->pic3 != '' && $learning->pic3 != null){
                     $file_old3 = $path.$learning->pic3;
                     unlink($file_old3);
@@ -96,7 +96,7 @@ class LearningController extends Controller
         if ($file4 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$learning->pic4){
+            if (file_exists($path.$learning->pic4)){
                 if ($learning->pic4 != '' && $learning->pic4 != null){
                     $file_old4 = $path.$learning->pic4;
                     unlink($file_old4);
@@ -111,7 +111,7 @@ class LearningController extends Controller
         if ($file5 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$learning->pic5){
+            if (file_exists($path.$learning->pic5)){
                 if ($learning->pic5 != '' && $learning->pic5 != null){
                     $file_old5 = $path.$learning->pic5;
                     unlink($file_old5);
@@ -126,7 +126,7 @@ class LearningController extends Controller
         if ($file6 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$learning->pic6){
+            if (file_exists($path.$learning->pic6)){
                 if ($learning->pic6 != '' && $learning->pic6 != null){
                     $file_old6 = $path.$learning->pic6;
                     unlink($file_old6);
@@ -141,7 +141,7 @@ class LearningController extends Controller
         if ($file7 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$learning->pic7){
+            if (file_exists($path.$learning->pic7)){
                 if ($learning->pic7 != '' && $learning->pic7 != null){
                     $file_old7 = $path.$learning->pic7;
                     unlink($file_old7);

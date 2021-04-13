@@ -34,7 +34,7 @@ class HighSchoolController extends Controller
         if ($file1 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$highSchool->main_img){
+            if (file_exists($path.$highSchool->main_img)){
                 if ($highSchool->pic1 != '' && $highSchool->pic1 != null){
                     $file_old1 = $path.$highSchool->pic1;
                     unlink($file_old1);
@@ -49,7 +49,7 @@ class HighSchoolController extends Controller
         if ($file2 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$highSchool->pic2){
+            if (file_exists($path.$highSchool->pic2)){
                 if ($highSchool->pic2 != '' && $highSchool->pic2 != null){
                     $file_old2 = $path.$highSchool->pic2;
                     unlink($file_old2);
@@ -64,7 +64,7 @@ class HighSchoolController extends Controller
         if ($file3 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$highSchool->pic3){
+            if (file_exists($path.$highSchool->pic3)){
                 if ($highSchool->pic3 != '' && $highSchool->pic3 != null){
                     $file_old3 = $path.$highSchool->pic3;
                     unlink($file_old3);
@@ -79,7 +79,7 @@ class HighSchoolController extends Controller
         if ($file4 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$highSchool->main_img){
+            if (file_exists($path.$highSchool->main_img)){
                 if ($highSchool->main_img != '' && $highSchool->main_img != null){
                     $file_old4 = $path.$highSchool->main_img;
                     unlink($file_old4);

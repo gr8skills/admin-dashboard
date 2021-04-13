@@ -36,10 +36,8 @@ class CMSIndexController extends Controller
         if ($row1_picture != ''){
             $path = public_path() . '/images';
 
-            if ($CMSIndex->row1_picture != '' && $CMSIndex->row1_picture != null){
-                $file_old1 = $path.$CMSIndex->row1_picture;
-                unlink($file_old1);
-            }
+
+
             $pic1 = time().'.'. $row1_picture->getClientOriginalName();
             $path = $row1_picture->storeAs('public/images', $pic1);
             $request->row1_picture->move(public_path('images'), $pic1);

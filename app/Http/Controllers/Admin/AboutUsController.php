@@ -32,7 +32,7 @@ class AboutUsController extends Controller
         if ($file1 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $about->img1) {
+            if (file_exists($path . $about->img1) ) {
                 if ($about->img1 != '' && $about->img1 != null) {
                     $file_old1 = $path . $about->img1;
                     unlink($file_old1);

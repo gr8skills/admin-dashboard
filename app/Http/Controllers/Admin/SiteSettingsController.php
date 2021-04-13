@@ -99,11 +99,13 @@ class SiteSettingsController extends Controller
         if($file != '') {
             $path = public_path() . '/images/';
 
-            //code for remove old file
-            if ($siteSettings->school_logo != '' && $siteSettings->school_logo != null) {
-                $file_old = $path . $siteSettings->school_logo;
-                unlink($file_old);
+            if (file_exists($path.$siteSettings->school_logo)){
+                if ($siteSettings->school_logo != '' && $siteSettings->school_logo != null) {
+                    $file_old = $path . $siteSettings->school_logo;
+                    unlink($file_old);
+                }
             }
+
 
             //upload new file
 //            $originalname =  time().'.'.$file->getClientOriginalName();
@@ -120,7 +122,7 @@ class SiteSettingsController extends Controller
                 ->first();
 
             $siteSettings->update($request->all());
-
+            $siteSettings = SiteSettings::orderBy('id', 'DESC')->first();
             $siteSettings->school_logo = $originalname;
             $siteSettings->save();
         }else{

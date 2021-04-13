@@ -15,6 +15,15 @@
             @method('PUT')
             <div class="form-group {{ $errors->has('title1') ? 'has-error' : '' }}">
                 <h2 class="h2">OUR HISTORY</h2>
+                <div class="custom-file-control thumbnail form-group"
+                     style="width: 400px; height: 300px; background-color: grey">
+                    <img src="{{url('images/'.$history->main_img)}}"
+                         alt="Header Image" width="550" height="300" class="" />
+                </div>
+                <div class="custom-file form-group">
+                    <input type="file" name="main_img" class="custom-file-input form-control" id="chooseFile1">
+                    <label class="custom-file-label" for="chooseFile1">Select Image: </label>
+                </div>
                 <label for="title1">Title</label>
                 <input type="text" id="title1" name="title1" class="form-control" value="{{ old('title1', isset($history) ? $history->title1 : '') }}" required>
                 @if($errors->has('title1'))

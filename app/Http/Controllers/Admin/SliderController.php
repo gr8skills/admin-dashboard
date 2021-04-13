@@ -59,7 +59,7 @@ class SliderController extends Controller
         if($file != '') {
             $path = public_path() . '/images/slides/';
 
-            if ($path . $slider->img1) {
+            if (file_exists($path . $slider->img1)) {
                 if ($slider->location != '' && $slider->location != null) {
                     $file_old = $path . $slider->location;
                     unlink($file_old);

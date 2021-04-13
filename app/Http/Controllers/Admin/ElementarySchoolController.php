@@ -30,7 +30,7 @@ class ElementarySchoolController extends Controller
         if ($file1 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$elementarySchool->pic1){
+            if (file_exists($path.$elementarySchool->pic1)){
                 if ($elementarySchool->pic1 != '' && $elementarySchool->pic1 != null){
                     $file_old1 = $path.$elementarySchool->pic1;
                     unlink($file_old1);
@@ -45,7 +45,7 @@ class ElementarySchoolController extends Controller
         if ($file2 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$elementarySchool->pic2){
+            if (file_exists($path.$elementarySchool->pic2)){
                 if ($elementarySchool->pic2 != '' && $elementarySchool->pic2 != null){
                     $file_old2 = $path.$elementarySchool->pic2;
                     unlink($file_old2);
@@ -60,7 +60,7 @@ class ElementarySchoolController extends Controller
         if ($file3 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$elementarySchool->main_img){
+            if (file_exists($path.$elementarySchool->main_img)){
                 if ($elementarySchool->main_img != '' && $elementarySchool->main_img != null){
                     $file_old3 = $path.$elementarySchool->main_img;
                     unlink($file_old3);

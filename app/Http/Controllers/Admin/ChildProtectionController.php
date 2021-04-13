@@ -33,7 +33,7 @@ class ChildProtectionController extends Controller
         if ($file1 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$protection->pic1){
+            if (file_exists($path.$protection->pic1) ){
                 if ($protection->pic1 != '' && $protection->pic1 != null){
                     $file_old1 = $path.$protection->pic1;
                     unlink($file_old1);
@@ -48,7 +48,7 @@ class ChildProtectionController extends Controller
         if ($file2 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$protection->pic2){
+            if (file_exists($path.$protection->pic2)){
                 if ($protection->pic2 != '' && $protection->pic2 != null){
                     $file_old2 = $path.$protection->pic2;
                     unlink($file_old2);
@@ -64,7 +64,7 @@ class ChildProtectionController extends Controller
         if ($file3 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$protection->pic3){
+            if (file_exists($path.$protection->pic3)){
                 if ($protection->pic3 != '' && $protection->pic3 != null){
                     $file_old3 = $path.$protection->pic3;
                     unlink($file_old3);
@@ -79,7 +79,7 @@ class ChildProtectionController extends Controller
         if ($file4 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$protection->main_img){
+            if (file_exists($path.$protection->main_img)){
                 if ($protection->main_img != '' && $protection->main_img != null){
                     $file_old4 = $path.$protection->main_img;
                     unlink($file_old4);

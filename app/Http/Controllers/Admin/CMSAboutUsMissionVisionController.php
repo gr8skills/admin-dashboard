@@ -31,7 +31,7 @@ class CMSAboutUsMissionVisionController extends Controller
         if ($file1 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $CMSAboutUsMissionVision->main_image) {
+            if (file_exists($path . $CMSAboutUsMissionVision->main_image)) {
                 if ($CMSAboutUsMissionVision->main_image != '' && $CMSAboutUsMissionVision->main_image != null) {
                     $file_old1 = $path . $CMSAboutUsMissionVision->main_image;
                     unlink($file_old1);
@@ -45,7 +45,7 @@ class CMSAboutUsMissionVisionController extends Controller
         if ($file2 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $CMSAboutUsMissionVision->image2) {
+            if (file_exists($path . $CMSAboutUsMissionVision->image2)) {
                 if ($CMSAboutUsMissionVision->image2 != '' && $CMSAboutUsMissionVision->image2 != null) {
                     $file_old2 = $path . $CMSAboutUsMissionVision->image2;
                     unlink($file_old2);
@@ -59,7 +59,7 @@ class CMSAboutUsMissionVisionController extends Controller
         if ($file3 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $CMSAboutUsMissionVision->image2) {
+            if (file_exists($path . $CMSAboutUsMissionVision->image2)) {
                 if ($CMSAboutUsMissionVision->image2 != '' && $CMSAboutUsMissionVision->image2 != null) {
                     $file_old3 = $path . $CMSAboutUsMissionVision->image2;
                     unlink($file_old3);
@@ -73,7 +73,7 @@ class CMSAboutUsMissionVisionController extends Controller
         if ($file4 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $CMSAboutUsMissionVision->image3) {
+            if (file_exists($path . $CMSAboutUsMissionVision->image3)) {
                 if ($CMSAboutUsMissionVision->image3 != '' && $CMSAboutUsMissionVision->image3 != null) {
                     $file_old4 = $path . $CMSAboutUsMissionVision->image3;
                     unlink($file_old4);

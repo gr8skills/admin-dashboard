@@ -77,7 +77,7 @@ class CMSAboutUsLeadershipController extends Controller
         if ($file != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $principalWelcome->principal_image) {
+            if (file_exists($path . $principalWelcome->principal_image)) {
                 if ($principalWelcome->principal_image != '' && $principalWelcome->principal_image != null) {
                     $file_old1 = $path . $principalWelcome->principal_image;
                     unlink($file_old1);
@@ -91,7 +91,7 @@ class CMSAboutUsLeadershipController extends Controller
         if ($file1 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $principalWelcome->img1) {
+            if (file_exists($path . $principalWelcome->img1)) {
                 if ($principalWelcome->img1 != '' && $principalWelcome->img1 != null) {
                     $file_old2 = $path . $principalWelcome->img1;
                     unlink($file_old2);

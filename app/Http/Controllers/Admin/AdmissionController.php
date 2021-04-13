@@ -31,7 +31,7 @@ class AdmissionController extends Controller
         if ($file1 != '' || $file2 != '' || $file3 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$admission->image1){
+            if (file_exists($path.$admission->image1)){
                 if ($admission->image1 != '' && $admission->image1 != null){
                     $file_old1 = $path.$admission->image1;
                     unlink($file_old1);

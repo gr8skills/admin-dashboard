@@ -26,4 +26,8 @@ class MainMenu extends Model
         'position'
     ];
 
+    public function submenu(){
+        $this->hasMany(SubMenu::class, 'menu_id');
+    }
+
 }

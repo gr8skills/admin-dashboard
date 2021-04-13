@@ -39,7 +39,7 @@ class CMSAboutUsRealLeadershipController extends Controller
         if ($file1 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $CMSAboutUsRealLeadership->main_image) {
+            if (file_exists($path . $CMSAboutUsRealLeadership->main_image)) {
                 if ($CMSAboutUsRealLeadership->main_image != '' && $CMSAboutUsRealLeadership->main_image != null) {
                     $file_old1 = $path . $CMSAboutUsRealLeadership->main_image;
                     unlink($file_old1);
@@ -53,7 +53,7 @@ class CMSAboutUsRealLeadershipController extends Controller
         if ($file2 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $CMSAboutUsRealLeadership->image1) {
+            if (file_exists($path . $CMSAboutUsRealLeadership->image1)) {
                 if ($CMSAboutUsRealLeadership->image1 != '' && $CMSAboutUsRealLeadership->image1 != null) {
                     $file_old2 = $path . $CMSAboutUsRealLeadership->image1;
                     unlink($file_old2);
@@ -67,7 +67,7 @@ class CMSAboutUsRealLeadershipController extends Controller
         if ($file3 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $CMSAboutUsRealLeadership->image2) {
+            if (file_exists($path . $CMSAboutUsRealLeadership->image2)) {
                 if ($CMSAboutUsRealLeadership->image2 != '' && $CMSAboutUsRealLeadership->image2 != null) {
                     $file_old3 = $path . $CMSAboutUsRealLeadership->image2;
                     unlink($file_old3);
@@ -81,7 +81,7 @@ class CMSAboutUsRealLeadershipController extends Controller
         if ($file4 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $CMSAboutUsRealLeadership->lImage1) {
+            if (file_exists($path . $CMSAboutUsRealLeadership->lImage1)) {
                 if ($CMSAboutUsRealLeadership->lImage1 != '' && $CMSAboutUsRealLeadership->lImage1 != null) {
                     $file_old4 = $path . $CMSAboutUsRealLeadership->lImage1;
                     unlink($file_old4);
@@ -95,7 +95,7 @@ class CMSAboutUsRealLeadershipController extends Controller
         if ($file5 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $CMSAboutUsRealLeadership->lImage2) {
+            if (file_exists($path . $CMSAboutUsRealLeadership->lImage2)) {
                 if ($CMSAboutUsRealLeadership->lImage2 != '' && $CMSAboutUsRealLeadership->lImage2 != null) {
                     $file_old5 = $path . $CMSAboutUsRealLeadership->lImage2;
                     unlink($file_old5);
@@ -109,7 +109,7 @@ class CMSAboutUsRealLeadershipController extends Controller
         if ($file6 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $CMSAboutUsRealLeadership->lImage3) {
+            if (file_exists($path . $CMSAboutUsRealLeadership->lImage3)) {
                 if ($CMSAboutUsRealLeadership->lImage3 != '' && $CMSAboutUsRealLeadership->lImage3 != null) {
                     $file_old6 = $path . $CMSAboutUsRealLeadership->lImage3;
                     unlink($file_old6);
@@ -123,7 +123,7 @@ class CMSAboutUsRealLeadershipController extends Controller
         if ($file7 != '') {
             $path = public_path() . '/images/';
 
-            if ($path . $CMSAboutUsRealLeadership->lImage4) {
+            if (file_exists($path . $CMSAboutUsRealLeadership->lImage4)) {
                 if ($CMSAboutUsRealLeadership->lImage4 != '' && $CMSAboutUsRealLeadership->lImage4 != null) {
                     $file_old7 = $path . $CMSAboutUsRealLeadership->lImage4;
                     unlink($file_old7);

@@ -94,6 +94,10 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
     Route::resource('childprotection', 'ChildProtectionController');
 
+    //Child Protection
+    //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
+    Route::resource('contactus', 'ContactUsController');
+
 
 });
 

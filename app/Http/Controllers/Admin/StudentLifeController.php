@@ -34,7 +34,7 @@ class StudentLifeController extends Controller
         if ($file1 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$studentLife->pic1){
+            if (file_exists($path.$studentLife->pic1)){
                 if ($studentLife->pic1 != '' && $studentLife->pic1 != null){
                     $file_old1 = $path.$studentLife->pic1;
                     unlink($file_old1);
@@ -49,7 +49,7 @@ class StudentLifeController extends Controller
         if ($file2 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$studentLife->pic2){
+            if (file_exists($path.$studentLife->pic2)){
                 if ($studentLife->pic2 != '' && $studentLife->pic2 != null){
                     $file_old2 = $path.$studentLife->pic2;
                     unlink($file_old2);
@@ -65,7 +65,7 @@ class StudentLifeController extends Controller
         if ($file3 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$studentLife->pic3){
+            if (file_exists($path.$studentLife->pic3)){
                 if ($studentLife->pic3 != '' && $studentLife->pic3 != null){
                     $file_old3 = $path.$studentLife->pic3;
                     unlink($file_old3);
@@ -74,13 +74,17 @@ class StudentLifeController extends Controller
             
             $pic3 = time().'.'. $file3->getClientOriginalName();
             $path = $file3->storeAs('public/images', $pic3);
+//            $pic3 = Image::make($file3->path());
+//            $pic3->resize(369.95, 246.63, function ($const) {
+//                $const->aspectRatio();
+//            });
             $request->pic3->move(public_path('images'), $pic3);
             $request->pic3 = $pic3;
         }
         if ($file4 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$studentLife->main_img){
+            if (file_exists($path.$studentLife->main_img)){
                 if ($studentLife->main_img != '' && $studentLife->main_img != null){
                     $file_old4 = $path.$studentLife->main_img;
                     unlink($file_old4);

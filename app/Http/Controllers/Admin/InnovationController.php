@@ -30,7 +30,7 @@ class InnovationController extends Controller
         if ($file1 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$innovation->pic1){
+            if (file_exists($path.$innovation->pic1)){
                 if ($innovation->pic1 != '' && $innovation->pic1 != null){
                     $file_old1 = $path.$innovation->pic1;
                     unlink($file_old1);
@@ -45,7 +45,7 @@ class InnovationController extends Controller
         if ($file2 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$innovation->main_img){
+            if (file_exists($path.$innovation->main_img)){
                 if ($innovation->main_img != '' && $innovation->main_img != null){
                     $file_old2 = $path.$innovation->main_img;
                     unlink($file_old2);

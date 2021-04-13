@@ -33,7 +33,7 @@ class PreSchoolController extends Controller
         if ($file1 != ''){
             $path = public_path() . '/images/';
 
-            if ($path.$preSchool->pic1){
+            if (file_exists($path.$preSchool->pic1)){
                 if ($preSchool->pic1 != '' && $preSchool->pic1 != null){
                     $file_old1 = $path.$preSchool->pic1;
                     unlink($file_old1);
@@ -48,7 +48,7 @@ class PreSchoolController extends Controller
         if ($file2 != ''){
             $path = public_path() . '/images';
 
-            if ($path.$preSchool->pic2){
+            if (file_exists($path.$preSchool->pic2)){
                 if ($preSchool->pic2 != '' && $preSchool->pic2 != null){
                     $file_old2 = $path.$preSchool->pic2;
                     unlink($file_old2);
@@ -63,7 +63,7 @@ class PreSchoolController extends Controller
         if ($file3 != ''){
             $path = public_path() . '/images';
 
-            if ($path.$preSchool->main_img){
+            if (file_exists($path.$preSchool->main_img)){
                 if ($preSchool->main_img != '' && $preSchool->main_img != null){
                     $file_old3 = $path.$preSchool->main_img;
                     unlink($file_old3);
