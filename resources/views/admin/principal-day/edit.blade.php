@@ -5,12 +5,12 @@
 <div class="card">
     <div class="card-header card-header-primary">
         <h4 class="card-title">
-            {{ trans('global.edit') }} About Us -> Principal's (Boarding) Welcome
+            {{ trans('global.edit') }} About Us -> Principal's (Day) Welcome
         </h4>
     </div>
 
     <div class="card-body">
-        <form action="{{ route("admin.about-us-principals-welcome.update", [$leadership->id]) }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route("admin.principal-day.update", [$leadership->id]) }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <h2 class="h2">WELCOME TO THE BLOOMBREED SCHOOLS</h2>

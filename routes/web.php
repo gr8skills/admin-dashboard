@@ -94,9 +94,38 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
     Route::resource('childprotection', 'ChildProtectionController');
 
-    //Child Protection
+    //Contact Us
     //Route::delete('index/destroy', 'SliderController@massDestroy')->name('index.massDestroy');
     Route::resource('contactus', 'ContactUsController');
+
+    //Principal Day
+    Route::resource('principal-day', 'PrincipalDaySchoolController');
+
+    //Image Gallery
+    Route::delete('gallery/destroy', 'ImageGalleryController@massDestroy')->name('gallery.massDestroy');
+    Route::resource('gallery', 'ImageGalleryController');
+
+    //Alumni Set
+    Route::delete('alumni-set/destroy', 'AlumniSetController@massDestroy')->name('alumni-set.massDestroy');
+    Route::resource('alumni-set', 'AlumniSetController');
+
+    //Alumni
+    Route::delete('alumni/destroy', 'AlumniController@massDestroy')->name('alumni.massDestroy');
+    Route::resource('alumni', 'AlumniController');
+
+    //Events
+    Route::delete('events/destroy', 'EventsController@massDestroy')->name('event.massDestroy');
+    Route::resource('events', 'EventsController');
+
+    //FAQs
+    Route::delete('faq/destroy', 'FrequentlyAskedQuestionController@massDestroy')->name('faq.massDestroy');
+    Route::resource('faq', 'FrequentlyAskedQuestionController');
+
+    //Career
+    Route::delete('career/destroy', 'CareerController@massDestroy')->name('career.massDestroy');
+    Route::resource('career', 'CareerController');
+
+    Route::resource('careerfixed', 'CareerFixedController');
 
 
 });

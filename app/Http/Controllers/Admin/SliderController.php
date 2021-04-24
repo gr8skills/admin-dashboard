@@ -7,7 +7,6 @@ use App\Http\Requests\MassDestroySliderRequest;
 use App\Http\Requests\StoreSliderRequest;
 use App\Http\Requests\UpdateSliderRequest;
 use App\Slider;
-use Illuminate\Http\Request;
 use Gate;
 use \Symfony\Component\HttpFoundation\Response;
 
@@ -94,10 +93,19 @@ class SliderController extends Controller
         return view('admin.sliders.show', compact('slider'));
     }
 
-    public function destroy(Slider $slider)
+    public function destroy($slider)
     {
         abort_if(Gate::denies('slider_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
+        $slider = Slider::find($slider);
+        $path = public_path() . '/images/slides/';
+
+        if (file_exists($path . $slider->img1)) {
+            if ($slider->location != '' && $slider->location != null) {
+                $file_old = $path . $slider->location;
+                unlink($file_old);
+            }
+        }
         $slider->delete();
 
         return back();

@@ -145,7 +145,14 @@
                                                         <i class="fa-fw fas fa-road">
 
                                                         </i>
-                                                        <span>Principal's Welcome</span>
+                                                        <span>Principal's (Boarding)</span>
+                                                    </a>
+                                                </li><li class="nav-item">
+                                                    <a href="{{ route("admin.principal-day.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
+                                                        <i class="fab fa-artstation">
+
+                                                        </i>
+                                                        <span>Principal's (Day) Wlc</span>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
@@ -199,7 +206,7 @@
                                             {{--                                        <span>{{ trans('cruds.permission.title') }}</span>--}}
                                         </a>
                                     </li>
-                                @endcan
+                            @endcan
 
                             @can('content_management_access')
                                     <li class="nav-item has-treeview {{ request()->is('admin/permissions*') ? 'menu-open' : '' }} {{ request()->is('admin/roles*') ? 'menu-open' : '' }} {{ request()->is('admin/users*') ? 'menu-open' : '' }}">
@@ -271,6 +278,16 @@
                             @endcan
                             @can('content_management_access')
                                     <li class="nav-item">
+                                        <a href="{{ route("admin.gallery.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
+                                            <i class="far fa-heart">
+
+                                            </i>
+                                            <span>Image Gallery</span>
+                                        </a>
+                                    </li>
+                            @endcan
+                            @can('content_management_access')
+                                    <li class="nav-item">
                                         <a href="{{ route("admin.childprotection.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
                                             <i class="fas fa-user-shield">
 
@@ -278,17 +295,81 @@
                                             <span>Child Protection</span>
                                         </a>
                                     </li>
+                            @endcan
+
+                            @can('content_management_access')
+                                    <li class="nav-item has-treeview {{ request()->is('admin/permissions*') ? 'menu-open' : '' }} {{ request()->is('admin/roles*') ? 'menu-open' : '' }} {{ request()->is('admin/users*') ? 'menu-open' : '' }}">
+                                        <a class="nav-link" data-toggle="collapse" href="#alumni">
+                                            <i class="fa-fw fas fa-user-graduate">
+
+                                            </i>
+                                            <p> Alumni
+                                                <b class="caret"></b>
+                                            </p>
+                                        </a>
+                                        <div class="collapse hid" id="alumni">
+                                            <ul class="nav">
+                                                <li class="nav-item">
+                                                    <a href="{{ route("admin.alumni-set.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
+                                                        <i class="fa-fw fas fa-road">
+
+                                                        </i>
+                                                        <span>Set Management</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="{{ route("admin.alumni.index") }}" class="nav-link {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}">
+                                                        <i class="fa-fw fas fa-walking">
+
+                                                        </i>
+                                                        <span>Individual</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                            @endcan
+                            @can('content_management_access')
+                                    <li class="nav-item">
+                                        <a href="{{ route("admin.events.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
+                                            <i class="far fa-calendar-check">
+
+                                            </i>
+                                            <span>Events & Update</span>
+                                        </a>
+                                    </li>
+                            @endcan
+                                @can('content_management_access')
+                                    <li class="nav-item">
+                                        <a href="{{ route("admin.career.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
+                                            <i class="far fa-calendar">
+
+                                            </i>
+                                            <span>Careers</span>
+                                        </a>
+                                    </li>
                                 @endcan
+                            @can('content_management_access')
+                                    <li class="nav-item">
+                                        <a href="{{ route("admin.faq.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
+                                            <i class="fas fa-question-circle">
+
+                                            </i>
+                                            <span>FAQs</span>
+                                        </a>
+                                    </li>
+                            @endcan
                             @can('content_management_access')
                                 <li class="nav-item">
                                         <a href="{{ route("admin.emis.index") }}" class="nav-link {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}">
                                             <i class="fa-fw fas fa-band-aid">
 
                                             </i>
-                                            <span>BLOOMBREED EMIS</span>
+                                            <span>EMIS</span>
                                             {{--                                        <span>{{ trans('cruds.permission.title') }}</span>--}}
                                         </a>
-                                    </li>
+                                </li>
                             @endcan
                         </ul>
                     </div>
